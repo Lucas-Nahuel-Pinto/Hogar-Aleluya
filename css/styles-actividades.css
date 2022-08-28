@@ -1,0 +1,540 @@
+.item4{
+    grid-column: 1 / 4;
+    height:598px;
+    background:#BC6D2A;
+}
+
+.item5{
+    grid-column: 1 / 4;
+    background:#28A5FF;
+
+}
+
+.item6{
+    grid-column: 1 / 4;
+    background:#BC6C24;
+    justify-items:center;
+   
+}
+
+
+.item7{
+    grid-column: 1 / 4;
+    display: grid;
+    border: 0px;
+    background:#9E4B00;
+}
+
+.item7 div{
+    grid-row: 2;
+    border: 0px;
+    display: grid;
+}
+
+.item5 article{
+    
+    border: 0px;
+}
+
+.ondulado-header img{
+    height:715px;
+}
+
+
+
+
+.nube{
+    height:630px;
+    
+    
+}
+
+.area{
+    height:229px;
+    
+    
+}
+
+.article2-SUM{
+   width:0px;
+    
+   margin-bottom:-242px;
+    
+}
+
+.nube-perfil1-SUM{
+   
+    position:relative; 
+    bottom:530px;
+    justify-content: center;
+    padding-right:130px;
+}
+
+.nube-texto1-SUM{
+ 
+    position:relative;
+    bottom:540px;
+    padding-right: 379px;
+    left:125px;
+}
+
+.nube-texto1-SUM h4{
+    margin-top:10px;
+}
+
+
+
+
+.article3-SUM{
+     
+    justify-items: end;
+    margin-bottom:-292px;
+}
+
+.nube-perfil2-SUM{
+   position:relative;
+    bottom:540px;
+    right:170px;
+    
+    
+}
+
+.nube-texto2-SUM{
+     width:490px;
+    position:relative;
+    bottom:550px;
+    
+    right:55px;
+    
+    
+}
+
+.nube-texto2-SUM h4{
+    margin-top:10px;
+}
+
+
+
+.article4-SUM{
+   width:0px;
+   margin-bottom:-212px;
+   
+    
+}
+
+.nube-perfil3-SUM{
+   
+    position:relative; 
+    bottom:520px;
+    justify-content: center;
+    padding-right:150px;
+}
+
+.nube-texto3-SUM{
+ 
+    position:relative;
+    bottom:525px;
+    padding-right: 400px;
+    left:120px;
+}
+
+.nube-texto3-SUM h4{
+    margin-top:10px;
+}
+
+
+
+
+.article5-SUM{
+     
+   justify-items:end;
+   margin-bottom:-292px;
+}
+
+.nube-perfil4-SUM{
+   position:relative;
+    bottom:540px;
+    right:180px;
+    
+    
+}
+
+.nube-texto4-SUM{
+     width:590px;
+    position:relative;
+    bottom:550px;
+    
+    right:20px;
+    
+}
+
+.nube-texto4-SUM h4{
+    margin-top:10px;
+}
+
+
+
+
+.article6-SUM{
+   width:0px;
+     
+}
+
+.nube-perfil5-SUM{
+   
+    position:relative; 
+    bottom:520px;
+    justify-content: center;
+    padding-right:190px;
+}
+
+.nube-texto5-SUM{
+     
+    position:relative;
+    bottom:520px;
+    padding-right:400px;
+    
+    left:110px;
+}
+
+.nube-texto5-SUM h4{
+    padding-left:75px;
+    margin-right:30px;
+    position:relative;
+    right:20px;
+    margin-top:10px;
+}
+
+
+/* Fuentes */
+
+
+@font-face{
+font-family: 'poetsenone-regular';
+src: url('./fonts/poetsenone-regular.ttf');
+}
+
+@font-face{
+font-family: 'araboto';
+src: url('./fonts/araboto-normal-400.ttf');
+    
+}
+
+@font-face{
+font-family: 'araboto-bold';
+src: url('./fonts/araboto-bold-400.ttf');
+    
+}
+
+/* Fuentes - Color y Tipo */
+
+.titulo-negro{
+    font-family:'poetsenone-regular';
+    
+}
+
+.titulo-blanco{
+    font-family:'poetsenone-regular';
+    color:white;
+    font-size:70px;
+    font-weight: 100;
+}
+
+.texto-negro{
+    font-family:'araboto';
+}
+
+.texto-blanco{
+    font-family:'araboto';
+    color:white;
+}
+
+.texto-negro-bold{
+    font-family:'araboto-bold';
+    
+}
+
+.texto-blanco-bold{
+    font-family:'araboto-bold';
+    color:white;
+}
+
+.titulo-azul{
+    font-family:'poetsenone-regular';
+    color:#0094FF;
+    font-size: 48px;
+    
+}
+
+.texto-azul{
+    font-family:'poetsenone-regular';
+    color:#0094FF;
+    font-size:24px;
+   
+    
+}
+
+
+
+.item6 img{
+    height:625px;
+    margin-top:100px;
+}
+
+.item6 .texto-blanco{
+    font-size:32px;
+    margin-left:45px;
+    margin-right:45px;
+    text-align:center;
+    line-height: 40px;
+}
+
+.item6 .texto-blanco-bold{
+    font-size:32px;
+    margin-left:30px;
+    margin-right:30px;
+    text-align:center;
+    line-height: 40px;
+}
+
+
+.seguir{
+    display:grid;
+   position:relative;
+    left:18%;
+   width:0px;
+ 
+    
+}
+
+.seguir p{
+  
+   width:180px;
+    text-align: left;
+    position:relative;
+   
+}
+
+.seguir img{
+    height:75px;
+    grid-column:2;
+    margin-top:0px;
+     
+}
+
+
+
+.item7 h1{
+    position:relative;
+    left:535px;
+    text-align: left;
+     padding-bottom:50px;
+   
+}
+
+.item7 p{
+    font-size: 32px;
+    text-align: left;
+    line-height:40px;
+}
+
+.item7 img{
+    height:400px;
+    
+}
+
+.item7 .lado-izq{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.item7 .texto-blanco-bold{
+    width:270px;
+    line-height:40px;
+}
+
+.item7 .boton1{
+    
+    
+    color: #84341B;
+    font-family:sans-serif;
+    font-weight:bolder;
+    font-size: 40px;
+    text-decoration:none;
+    font-stretch:extra-condensed;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #F0CB11;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 30px;
+    margin-top:10px;
+    box-shadow: 3px 3px 0px 3px #87562D;
+
+
+    
+    
+}
+
+
+/* NUEVAS CONVENCIONES */
+
+.grid-container-actividades{
+    display: grid;
+    background-color: cornsilk;
+    padding-top:  15%;
+    position: relative;
+    grid-template-columns: 0px auto 0px;
+}
+
+.difuminada{
+    grid-column: 1 / 4;
+    background:#28A5FF;
+
+}
+
+.nube-slider{}
+
+.nube-slider-text{
+    font-family:'poetsenone-regular';
+    color:#0094FF;
+    font-size:24px;
+}
+
+
+.nube{
+
+    width:0px;  
+    margin-bottom:-242px;
+
+}
+
+.nube-izq{
+  
+}
+
+.nube-der{
+
+}
+
+.nube-divtitle{
+    position:relative;
+    bottom:540px;
+    padding-right: 379px;
+    left:125px;
+}
+
+.nube-title{
+    font-family:'poetsenone-regular';
+    color:#0094FF;
+    font-size: 48px;
+}
+
+.nube-text{
+    font-family:'poetsenone-regular';
+    color:#0094FF;
+    font-size:24px;
+}
+
+.sobrevivir{
+    grid-column: 1 / 4;
+    background:#BC6C24;
+    justify-items:center;
+}
+
+.sobrevivir-title{
+    font-family:'poetsenone-regular';
+    color:white;
+    font-size:70px;
+    font-weight: 100;
+}
+
+.sobrevivir-img{
+
+}
+
+.sobrevivir-text{
+    font-family:'araboto';
+    color:white;
+}
+
+.sobrevivir-seguir-divtitle{
+    display:grid;
+    position:relative;
+     left:18%;
+    width:0px;
+}
+
+.sobrevivir-seguir-text{
+    font-family:'araboto-bold';
+}
+
+.talleres{
+    grid-column: 1 / 4;
+    display: grid;
+    border: 0px;
+    background:#9E4B00;
+}
+
+.talleres-title{
+    font-family:'poetsenone-regular';
+    color:white;
+    font-size:70px;
+    font-weight: 100;
+}
+
+.talleres-izq{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+.talleres-img{
+
+}
+
+.talleres-der{
+
+}
+
+.talleres-text{
+    font-family:'araboto-bold';
+    color:white;
+}
+
+.talleres-conocermas{
+
+}
+
+.conocermas-divtitle{
+
+}
+
+.conocermas-title{
+
+}
+
+.conocermas-seguirleyendo{
+    width:270px;
+    line-height:40px;
+}
+
+.conocermas-btn{
+    color: #84341B;
+    font-family:sans-serif;
+    font-weight:bolder;
+    font-size: 40px;
+    text-decoration:none;
+    font-stretch:extra-condensed;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #F0CB11;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 30px;
+    margin-top:10px;
+    box-shadow: 3px 3px 0px 3px #87562D;
+}
