@@ -7,19 +7,7 @@
 
 
 body {
-    /*  background: #0094FF;*/
     font-family: 'Roboto', sans-serif;
-    /* background-image: url(../img/bg-preguntas-frecuentes.png); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 1578px 1731px; */
-    /* background-position: center; */
-    /* position: absolute; */
-    /* width: auto; */
-    /* height: auto; */
-    /* left: -3px; */
-    /* top: 0px;*/
-    
-
 }
 
 .foto-de-fondo-ondulado-header {
@@ -422,9 +410,6 @@ footer {
     /* height: 600px; */
     /* height: 575px; */
     font-family: 'Roboto', sans-serif;
-    /* background-image: url(../img/bg-footer.png); */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-color: #bc6d2a;
     /* align-items: center; */
     /* z-index: 1; */
