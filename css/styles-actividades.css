@@ -386,7 +386,7 @@ src: url('./fonts/araboto-bold-400.ttf');
     background-color: cornsilk;
     padding-top:  15%;
     position: relative;
-    grid-template-columns: 0px auto 0px;
+    grid-template-columns: auto auto auto;
 }
 
 .difuminada{

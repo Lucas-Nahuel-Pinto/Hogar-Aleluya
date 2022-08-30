@@ -27,21 +27,21 @@ body {
     /* top: 0px;*/
 }
 
-.foto-de-fondo-ondulado-header img {
+.FotoPrincipal-Header img {
     width: 100%;
     height: 840px;
     position: absolute;
     z-index: 1;
 }
 
-.titulo-body{
+.TituloPrincipal-Header {
     grid-column: 1 / 4;
    /* height:700px;*/
    /* background:#BC6D2A;*/
     
 }
 
-.titulo-body h1{
+.TituloPrincipal-Header  h1{
     /**********/
         /* display: flex; */
     /* padding-top: 300px; */

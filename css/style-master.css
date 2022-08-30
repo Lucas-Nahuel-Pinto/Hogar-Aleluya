@@ -5,32 +5,47 @@
     padding: 0;
 }
 
+/***************Generico para el header entre paginas********************/
 
-/*
-.foto-de-fondo-ondulado-header 
+.FotoPrincipal-Header 
 {
-    width: 100%;
-    position: absolute;
-    /* grid-column: 1/4; */
-    /* height: 153px; */
-/*    z-index: 0;
-
+    display: grid;
     grid-column: 1 / 4;
     position: absolute;
     top: 0px;
     margin: 0px;
     z-index: 0;
-    width: 100%;
+
+}
+
+.FotoPrincipal-Header img
+{   width: 100%;
     height: 100%;
+    filter: brightness(0.4);
 }
 
-.foto-de-fondo-ondulado-header img
-{
-    /* max-height: 800px; */
-/*    filter: brightness(0.4);
+.TituloPrincipal-Header  {
+    grid-area: grid-centrar-header;
+    display: grid;
+    grid-column: 1/4;
+    z-index: 1;
+    align-items: end;
 }
-*/
 
+.TituloPrincipal-Header  h1 {
+    display: grid;
+    color: white;
+    font-size: 100px;
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    width: 1200px;
+    left: 33px;
+    background: rgba(40, 40, 40, 0.5);
+    border-radius: 50px;
+}
+
+/************************************/
 
 /*******************************************************/
 /*******************************************************/
