@@ -6,29 +6,14 @@
 }
 
 
-
-body {
-    /*  background: #0094FF;*/
-    font-family: 'Roboto', sans-serif;
-    /* background-image: url(../img/bg-preguntas-frecuentes.png); */
-    /* background-repeat: no-repeat; */
-    /* background-size: 1578px 1731px; */
-    /* background-position: center; */
-    /* position: absolute; */
-    /* width: auto; */
-    /* height: auto; */
-    /* left: -3px; */
-    /* top: 0px;*/
-    
-
-}
-
-.foto-de-fondo-ondulado-header {
+/*
+.foto-de-fondo-ondulado-header 
+{
     width: 100%;
     position: absolute;
     /* grid-column: 1/4; */
     /* height: 153px; */
-    z-index: 0;
+/*    z-index: 0;
 
     grid-column: 1 / 4;
     position: absolute;
@@ -42,12 +27,35 @@ body {
 .foto-de-fondo-ondulado-header img
 {
     /* max-height: 800px; */
-    filter: brightness(0.4);
+/*    filter: brightness(0.4);
+}
+*/
+
+
+/*******************************************************/
+/*******************************************************/
+/******************BODY*********************************/
+
+body 
+{
+    display: grid;
+
+    grid-template-rows: 
+    auto 
+    auto 
+    auto;
+    grid-template-areas: 
+    'header-grid'
+    'main-grid'
+    'footer-grid';
+
+    background-color: cornsilk;
+    font-family: 'Roboto', sans-serif;
 }
 
 
-/******************************************************/
-/*******************************************************/
+/********************************************************/
+/********************************************************/
 /**************** Header ********************************/
 
 .isologo 
@@ -141,7 +149,7 @@ body {
 {
     color: #7B3C00;
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(219,219,219,1) 80%, rgba(93,93,93,1) 100%);  
-    box-shadow: 0px 0px 10px #BFBCBC;
+    box-shadow: 0px 0px 5px #BFBCBC;
     border-radius: 50px;
     line-height: 25px;
     padding: 18px;
@@ -233,7 +241,7 @@ body {
     padding: 15px;
     background-color: #F0CB11;
     background: linear-gradient(0deg, rgba(201,157,0,1) 0%, rgba(255,213,28,1) 20%, rgba(255,236,30,1) 100%); 
-    box-shadow: 0px 0px 10px #BFBCBC;
+    box-shadow: 0px 0px 5px #BFBCBC;
     font-size: x-large;
     border-radius: 10px;
     filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.25));
@@ -386,27 +394,10 @@ body {
     width: 100%;
 }
 
-/*****************************************************************/
 
-body 
-{
-    display: grid;
-
-    grid-template-rows: 
-    auto 
-    auto 
-    auto;
-    grid-template-areas: 
-    'header-grid'
-    'main-grid'
-    'footer-grid';
-
-    background-color: cornsilk;
-    font-family: 'Roboto', sans-serif;
-}
-
-
-/*****************FOOTER**************************/
+/*******************************************************/
+/*******************************************************/
+/*******************FOOTER******************************/
 
 
 footer 
