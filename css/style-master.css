@@ -5,15 +5,15 @@
     padding: 0;
 }
 
+/***************Generico para el header entre paginas********************/
 
-/*
 .foto-de-fondo-ondulado-header 
 {
     width: 100%;
     position: absolute;
     /* grid-column: 1/4; */
     /* height: 153px; */
-/*    z-index: 0;
+   z-index: 0;
 
     grid-column: 1 / 4;
     position: absolute;
@@ -26,11 +26,39 @@
 
 .foto-de-fondo-ondulado-header img
 {
-    /* max-height: 800px; */
-/*    filter: brightness(0.4);
+     /* max-height: 800px;  */
+   filter: brightness(0.4);
 }
-*/
 
+.titulo-body {
+    grid-area: grid-centrar-header;
+    display: grid;
+    grid-column: 1/4;
+    /* height: 700px; */
+    /* background: #BC6D2A; */
+    z-index: 1;
+    align-items: end;
+}
+
+.titulo-body h1 {
+    display: grid;
+    /* padding-top: 300px; */
+    color: white;
+    background: #cb5353;
+    font-size: 100px;
+    /* z-index: 9; */
+    justify-content: flex-start;
+    align-content: center;
+    position: relative;
+    width: 1190px;
+    /* height: 298px; */
+    left: 33px;
+    /* top: 592px; */
+    background: rgba(40, 40, 40, 0.5);
+    border-radius: 50px;
+}
+
+/************************************/
 
 /*******************************************************/
 /*******************************************************/
