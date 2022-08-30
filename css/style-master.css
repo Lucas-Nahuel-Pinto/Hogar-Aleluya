@@ -53,6 +53,72 @@ body
     font-family: 'Roboto', sans-serif;
 }
 
+/************** Text **************/
+
+/** Size **/
+
+.p-small
+{
+    font-size: 18px;
+}
+
+.p-medium
+{
+    font-size: 22px;
+}
+
+.p-large
+{
+    font-size: 26px;
+}
+
+/** Color **/
+
+.p-primary-color
+{
+    color:black;
+}
+
+.p-secondary-color
+{
+    color:white;
+}
+
+/** Alignment **/
+
+.p-left-align
+{
+    text-align: left;
+}
+
+.p-center-align
+{
+    text-align: center;
+}
+
+.p-right-align
+{
+    text-align: right;
+}
+
+/************** Elements in Grid Containers **************/
+
+/** Alignment **/
+
+.row-align-left
+{
+    justify-content: left;
+}
+
+.row-align-center
+{
+    justify-content: center;
+}
+
+.row-align-right
+{
+    justify-content: right;
+}
 
 /********************************************************/
 /********************************************************/
