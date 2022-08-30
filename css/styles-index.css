@@ -33,6 +33,61 @@ body
     background-color: cornsilk;
 }
 
+/********************************************************/
+/***************CSS Slider Index*************************/
+
+.index-header-slider-grid 
+{
+    display: grid;
+    grid-area: grid-centrar-header;
+    
+    grid-template-columns: 100px auto 100px;
+    grid-template-areas: 'back-arrow index-header-slider-titulo next-arrow';
+    grid-column: 1/4;
+    /* position: relative; */
+    justify-content: space-between;
+    z-index: 6;
+    /* top: -500px; */
+    align-items: center;
+    justify-items: stretch;
+
+}
+
+.index-header-slider-back-arrow
+{
+    display: grid;
+    grid-area: back-arrow;
+}
+
+.index-header-slider-titulo 
+{
+    display: grid;
+    grid-area: index-header-slider-titulo;
+    /* grid-area: grid-centrar-header; */
+    /* display: grid; */
+    /* grid-template-columns: 100px auto 100px; */
+    /* grid-template-areas: 'back-arrow index-header-slider-titulo next-arrow'; */
+    /* grid-column: 1/4; */
+    
+    position: relative;
+    /* z-index: 6; */
+    /* top: 178px; */
+    align-items: end;
+    justify-items: start;
+    bottom: -25%;
+    align-content: center;
+    /* bottom: -29px;*/
+}
+
+.index-header-slider-next-arrow
+{
+    display: grid;
+    grid-area: next-arrow;
+}
+
+
+/****************************************************/
+
 .index-main-grid
 {
     display: grid;
@@ -123,8 +178,8 @@ body
 {
     grid-area: index-nosotros-text;
 
-    color:black;
-    font-family: 'araboto';
+    color:rgb(70, 70, 70);
+    font-family: "calibri";
     text-align: justify;
     font-size: 22px;
     line-height: 30px;
@@ -286,8 +341,8 @@ body
 {
     grid-area: index-actividades-text;
 
-    color: black;
-    font-family: 'araboto';
+    color:rgb(70, 70, 70);
+    font-family: 'calibri';
     font-size: 22px;
     line-height: 30px;
     text-align: justify;
@@ -341,9 +396,9 @@ body
     display: grid;
     grid-area: index-actividades-programa-text;
 
-    color:black;
+    color:rgb(70, 70, 70);
     line-height: 30px;
-    font-family: 'araboto';
+    font-family: 'calibri';
     font-size: 22px;
     margin-left: 120px;
     margin-right: 120px;
@@ -522,7 +577,8 @@ body
 .index-eventos-text
 {
     grid-area: index-eventos-text;
-    font-family: 'araboto';
+    color:rgb(70, 70, 70);
+    font-family: 'calibri';
     font-size: 22px;
     text-align: justify;
     line-height: 30px;
@@ -600,7 +656,7 @@ body
 {
     grid-area: index-voluntarios-text;
 
-    font-family: 'araboto';
+    font-family: 'calibri';
     font-size: 22px;
     width: 55%;
     text-align: center;
@@ -644,9 +700,7 @@ body
     grid-area: index-testimonios-grid;
 
     grid-template-rows: 
-    auto 
-    auto 
-    auto 
+    250px  
     auto 
     auto;
     grid-template-areas: 
@@ -747,12 +801,14 @@ body
 
 .index-testimonios-nom
 {
-    font-family: 'araboto';
+    font-family: 'calibri';
+    color:rgb(70, 70, 70);
 }
 
 .index-testimonios-perfil
 {
-    font-family: 'araboto';
+    font-family: 'calibri';
+    color:rgb(70, 70, 70);
 }
 
 .index-testimonios-desc
@@ -760,8 +816,10 @@ body
     padding: 27px;
     text-align: justify;
     font-weight: lighter;
+    font-family: "calibri";
     font-size: 20px;
     margin-bottom: 60px;
+    color:rgb(40, 40, 40);
 }
 
 .index-testimonios-bottom
@@ -832,7 +890,7 @@ body
 {
     justify-content: right;
     color: white;
-    font-family: 'araboto';
+    font-family: 'calibri';
     font-size: 22px;
     text-align: justify;  
     line-height: 30px; 
@@ -866,7 +924,7 @@ body
 }
 
 
-/*****************************Slider scc******************************/
+/*****************************Contenedor Slider animaciones scc******************************/
 /* Slideshow container */
 .slideshow-container
 {
@@ -931,7 +989,7 @@ body
 }
 
 /* Caption text */
-.text 
+.texto-header-slider 
 {
     color: #f2f2f2;
     font-size: 15px;
@@ -945,7 +1003,7 @@ body
 }
 
 /* The dots/bullets/indicators */
-.dot 
+/* .dot 
 {
     display: inline-block;
 
@@ -956,25 +1014,27 @@ body
     background-color: #bbb;
     border-radius: 50%;
     transition: background-color 0.6s ease;
-}
+} */
 
+/* 
 .active, .dot:hover 
 {
     display: block;
 
     background-color: #717171;
-}
+} */
+
 
 /* Fading animation */
 .fade 
 {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 
 @keyframes fade 
 {
-    from {opacity: .4}
+    from {opacity: .8}
     to {opacity: 1}
 }
 
@@ -1011,7 +1071,7 @@ body
 /***********************************************/
   /***********************Slide Testimonios****************************************/
    
-.demoTestimonios
+.slidesTestimonios
 {
    display: none;
 }
@@ -1120,12 +1180,29 @@ body
     font-stretch: extra-condensed;
     border-radius: 30px; 
     border: 0px;
-    background-color: #F0CB11; 
+    background: linear-gradient(0deg, rgba(201,157,0,1) 0%, rgba(255,213,28,1) 20%, rgba(255,236,30,1) 100%); 
     padding-top: 20px; 
     padding-bottom: 20px; 
     box-shadow: 3px 20px 10px 3px #87562d; 
     width: 300px; 
     justify-self: end;
+}
+
+.ayudanos-donar-btn:active
+{
+     background: linear-gradient(0deg, rgba(201,157,0,1) 0%, rgba(255,213,28,1) 0%, rgba(255,236,30,1) 100%);
+     padding-top: 18px; 
+     padding-bottom: 18px; 
+     width: 290px; 
+     box-shadow: 1px 10px 8px 1px #87562d; 
+     font-size: 58px;
+}
+
+.ayudanos-donar-btn:hover
+{
+    background:linear-gradient(0deg, rgba(201,157,0,0.85) 0%, rgba(255,213,28,0.85) 20%, rgba(255,236,30,0.85) 100%); 
+    opacity: 0.9;
+    color: #8f3e25;
 }
 
 .primary-btn
@@ -1151,6 +1228,7 @@ body
 {
     background: linear-gradient(0deg, rgba(201,157,0,0.85) 0%, rgba(255,213,28,0.85) 20%, rgba(255,236,30,0.85) 100%); 
     color: rgb(136, 95, 0);
+    border-radius: 30px; 
 }
 
 .index-verMas-btn :hover
@@ -1205,9 +1283,10 @@ body
     color: black;
 }
 
-.index-ayudanos-btn:hover
+.index-voluntarios-btn:hover
 {
     background-color: #FFFF11;
     opacity: 0.8;
     color: black;
 }
+
