@@ -445,7 +445,7 @@ body
     grid-area: next-arrow;
 }
 
-.index-header-margin-bottom 
+.header-margin-bottom 
 {
     display: grid;
     grid-area: margin-bottom;
@@ -462,7 +462,7 @@ body
     position: unset;
 }
 
-.index-header-margin-bottom img 
+.header-margin-bottom img 
 {
     display: grid;
     grid-area: margin-bottom;
@@ -529,6 +529,7 @@ width: 100%;
 
 .footer-grid 
 {
+    display: grid;
     grid-area: footer-grid;
 
     grid-template-rows: 
@@ -541,21 +542,23 @@ width: 100%;
     'footer-bottom';
 
     color: white;
-    grid-row-gap:100px;
     
 }
 
 .footer-top 
 {
-    grid-area: footer-top;
     display: grid;
+    grid-area: footer-top;
     /* height: 4em; */
 }
 
 .footer-center 
 {
     display: grid;
-    grid-area: datos;
+    grid-area: footer-center;
+
+    grid-template-rows: 
+    500px;
 
     grid-template-columns: 
     30% auto 30%;
@@ -563,6 +566,7 @@ width: 100%;
     'footer-left footer-divisologo footer-right';
 
     align-items: center;
+    justify-content: space-between;
     grid-column-gap: 5px;
     background-color: #894A00;
 }
