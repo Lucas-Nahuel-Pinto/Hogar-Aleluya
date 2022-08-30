@@ -73,6 +73,7 @@ body
     'index-nosotros-bottom';
     
     background: white;
+    grid-row-gap: 25px;
 }
 
 .index-nosotros-main
@@ -97,7 +98,7 @@ body
     grid-template-rows: 
     auto 
     auto 
-    auto;
+    35%;
     grid-template-areas:
     'index-nosotros-title'
     'index-nosotros-text'
@@ -196,6 +197,12 @@ body
     grid-area: index-actividades-top;
 }
 
+.index-actividades-main
+{
+    display: grid;
+    grid-area: index-actividades-main;
+}
+
 .index-actividades-Background
 {
     display: grid;
@@ -209,7 +216,6 @@ body
     text-align: center;
     margin: 45px 70px 50px 70px;
     background-color: white;
-    border: 1px solid black;
     border-radius: 250px;    
 }
 
@@ -246,11 +252,14 @@ body
 {
     display: grid;
     grid-area: index-actividades-bottom;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 
+    auto 
+    auto 
+    auto;
     grid-template-areas:
-        'index-actividades-programa-img'
-        'index-actividades-programa-text'
-        'index-actividades-programa-btn';
+    'index-actividades-programa-img'
+    'index-actividades-programa-text'
+    'index-verMas-btn';
     grid-row-gap: 60px;
     width: 780px;
     height: 780px;
@@ -458,7 +467,7 @@ body
     grid-template-areas:
     'index-eventos-title'
     'index-eventos-text'
-    'index-eventos-btn';
+    'index-verMas-btn';
 
     color:black;
 }
@@ -546,7 +555,7 @@ body
     grid-template-areas:
     'index-voluntarios-title' 
     'index-voluntarios-text' 
-    'index-voluntarios-btn';
+    'index-verMas-btn';
     
     align-items: center;
     grid-row-gap: 0px;
@@ -1121,19 +1130,6 @@ body
     justify-self: end;
 }
 
-.verMas-primario{
-    color: #83331b;
-    font-family: sans-serif;
-    font-weight: bolder;
-    font-size: 26px;
-    text-decoration: none;
-
-    border-radius: 30px;
-    margin-top: 10px;
-    box-shadow: 0px 0px 10px #bfbcbc;
-
-}
-
 .primary-btn
 {
     display: grid;
@@ -1146,9 +1142,10 @@ body
     font-size: 26px;
     text-decoration: none;
     color: #83331b;
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 200px;
+    height: 80px;
+    align-items: center;
+
 }
 
 .secondary-btn{
@@ -1166,9 +1163,6 @@ body
     padding-bottom: 20px;
     width: 200px;
 }
-
-.verMas-primario{}
-
 
 /* HOOVERS */
 .primary-btn :hover
