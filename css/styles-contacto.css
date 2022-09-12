@@ -316,3 +316,28 @@ form.form_contact input[type="submit"]:hover {
     opacity: 1;
   }
 
+/***************Footer original pra superponer el mapa y footer*****************/
+
+/**Footer*/
+/* .ondulado-footer img {
+    width: 110%;
+    position: relative;
+    z-index: 9;
+    top: -246px;
+
+} */
+/* footer{
+position: relative;
+    justify-content: space-around;
+    display: grid;
+    grid-column: 1 / 4;
+    height: 640px;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/bg-footer.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     align-items: center;
+    z-index: 20;
+    bottom: 69px;
+    height: 500px;
+} */
