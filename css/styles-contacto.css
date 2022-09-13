@@ -23,13 +23,9 @@ p{
     z-index:10;
 }
 
-h3{
-    position:relative;
-    z-index:10;
-    
-} */
 /*Body- main**/
-/* body
+/* 
+body
 {
     display: grid;
     
@@ -88,12 +84,14 @@ h3{
 .titulo-bienvenida{
     color: black;
     font-family: 'poetsenone-regular';
+    font-size: 40px;
     /* font-weight: 500; */
     padding-bottom: 1em;
 }
 
 .texto-bienvenida{
     padding-bottom: 2em;
+    width: 95%;
 }
 
 .contacto-aside-area{
@@ -147,10 +145,11 @@ h3{
 
 .titulo-form{
     grid-area: titulo-form;
-    /*font-size: 25px; */
-    font-weight: 600;
+    font-size: 40px;
+    /* font-weight: 600; */
     color: #303030;
-    margin-bottom: 66px;
+    margin-bottom: 1em;
+    font-family: 'PoetsenOne';
 }
 
 .user_info{    
