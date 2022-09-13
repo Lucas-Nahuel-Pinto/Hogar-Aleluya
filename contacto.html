@@ -115,7 +115,7 @@
             <div class="contacto-Form-area">
                 <div class="contacto-form-area-bienvenida">
                 
-                <h1 class="titulo-bienvenida h-medium">CONTACTENOS</h1>
+                <h1 class="titulo-bienvenida h-medium">Contactenos</h1>
                 <h3 class='texto-bienvenida p-medium'> Te invitamos a contactarte con nosotros, llenando los campos de abajo y dejando un comentario con
                     la
                     sugerencia o inquietud que tengas.,<br> tratando de generar nuevas alternativas personales que </h3>
@@ -125,7 +125,7 @@
                 <form class="form_contact"
                     action="./php/scriptEnviarAContacto.php" method="post"
                     onsubmit="return validarForm();">
-                    <h2 class="titulo-form h-medium">Formulario</h2>
+                    <h2 class="titulo-form h-medium">FORMULARIO</h2>
 
                     <div class="user_info">
 
@@ -177,17 +177,22 @@
                 </div>
 
                 <div>
-                    <h2> Datos de la Ong</h2>
-                    <iconify-icon icon="el:map-marker"></iconify-icon>
-                    <p><span class="fa fa-map-marker"></span> Manuel Alberti 1197, Pilar.</p>
-                    <iconify-icon icon="ci:phone"></iconify-icon>
-                    <p><span class="fa fa-phone"></span>+54 9 11 4868-2689</p>
-                    <iconify-icon icon="ion:mail-sharp"></iconify-icon>
-                    <p><span class="fa fa-envelope"></span> hogar.aleluya.01@gmail.com</p>
+                    <div class="p-small">
+                      <h2> Datos de la Ong</h2>
+                    </div>
+                 
+                    
+                    <p><iconify-icon icon="el:map-marker"></iconify-icon>Manuel Alberti 1197, Pilar.</p>
+                   
+                    <p><iconify-icon icon="ci:phone"></iconify-icon>+54 9 11 4868-2689</p>
+                    
+                    <p><iconify-icon icon="ion:mail-sharp"></iconify-icon>hogar.aleluya.01@gmail.com</p>
                 </div>
 
                 <div>
-                    <h2>Horarios</h2>
+                    <div class="p-small">
+                       <h2>Horarios</h2>
+                      </div>
                     <p> Lunes a Viernes: 9:00 hs a 18:00 hs<br> Sabados: 10:00 hs a 12:00 hs</p>
 
                 </div>
@@ -207,8 +212,6 @@
 
                 <h1>"El mensaje ha sido enviado correctamente!"</h1>
                 <input type="submit" value="Enviar nuevo mensaje" id="btnSendAgain">
-                
-
             </div>
         </div>
 </div>
@@ -325,12 +328,10 @@
 
 </footer>
 <!-- # Nuevo Footer.(termina aca)-->
-
     <script src="js\modalContacto.js"></script>
     <script src="js\scriptValidarContacto.js"></script>
+    <!--Scritp de la iconografia----------->
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
-
-
 </body>
 
 </html>

@@ -5,6 +5,12 @@
     padding: 0;
 }
 
+@font-face
+{
+font-family: 'poetsenone-regular';
+src: url('./fonts/poetsenone-regular.ttf');
+}
+
 /***************Generico para el header entre paginas********************/
 
 .FotoPrincipal-Header 
@@ -35,22 +41,25 @@
 .TituloPrincipal-Header  {
     grid-area: hero-row;
     display: grid;
-    grid-column: 1/4;
+    /* grid-column: 1/4; */
     z-index: 1;
     align-items: end;
+    font-size:70px;
 }
 
 .TituloPrincipal-Header  h1 {
     display: grid;
     color: white;
-    font-size: 100px;
+    font-size: 125px;
     justify-content: flex-start;
     align-content: center;
     position: relative;
-    width:80%;
+    /* width:80%; */
     left: 33px;
     background: rgba(40, 40, 40, 0.5);
     border-radius: 50px;
+
+    
 }
 
 /************************************/

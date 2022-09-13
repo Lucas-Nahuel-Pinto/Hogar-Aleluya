@@ -1,11 +1,3 @@
-@font-face
-{
-font-family: 'poetsenone-regular';
-src: url('./fonts/poetsenone-regular.ttf');
-}
-
-
-
 body
 {
     display: grid;
