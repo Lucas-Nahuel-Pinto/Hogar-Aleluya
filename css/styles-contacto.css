@@ -1,5 +1,5 @@
 
-h1{
+/* h1{
     font-size:70px;
     position:relative;
     z-index:10;
@@ -27,9 +27,27 @@ h3{
     position:relative;
     z-index:10;
     
-}
+} */
 /*Body- main**/
+/* body
+{
+    display: grid;
+    
+    grid-template-rows: 
+    auto 
+    auto 
+    auto;
+    grid-template-areas: 
+    'header-row'
+    'index-main-row'
+    'footer-row';
+
+    background-color: rgb(255, 255, 255);
+} */
+
+
 .grid-container{
+    grid-area:'main-grid-row';
     display: grid;
     background-color: cornsilk;
     /* padding-top: 350px; */
@@ -40,70 +58,124 @@ h3{
 
 .grid-contacto{
     grid-area: contacto-area;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 30%;
     grid-template-areas: 'contacto-form contacto-enlaces';
     display: grid;
+    background: #BC6D2A;
 }
 
-/* Formulario de contacto*/
-.item5{
-  
+.contacto-Form-area{
     grid-area: contacto-form;
+ 
+    height: auto;
+    display: grid;
+    border: 0px;
+    background: white;
+    justify-items: center;
+    align-content: center;
+    padding-bottom: 2em;
+    justify-content: space-between;
+    border-radius: 10% 10% 0% 0%;
 }
 
-form.form_contact {
-    width: 95%;
-    height: 1200px;
+.contacto-form-area-bienvenida{
+    width: 90%;
+    display: grid;
+    padding-top: 6em;
+    padding-bottom: 3em;
+}
+
+.titulo-bienvenida{
+    color: black;
+    font-family: 'poetsenone-regular';
+    /* font-weight: 500; */
+    padding-bottom: 1em;
+}
+
+.texto-bienvenida{
+    padding-bottom: 2em;
+}
+
+.contacto-aside-area{
+    grid-area: contacto-enlaces;
+    height: auto;
+    display: grid;
+    border: 0px;
+    color: white;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+}
+
+.contacto-Form-area div{
+    border: 0px;
+    display: grid;
+    flex-wrap: nowrap;
+    justify-items: stretch;
+}
+
+
+.contacto-aside-area div{
+    display: flex;
+    /* grid-row: 2; */
+    border: 0px;
+    display: block;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contacto-aside-area-titulo{
+    display: grid;
+    color: white;
+    position: relative;
+    /* width: 80%; */
+    /* left: 33px; */
+    background: #E0A36C;
+    /* background: rgba(40, 40, 40, 0.5); */
+    border-radius: 50px;
+}
+
+.form_contact{
+    width: 50%;
     padding: 10px 0px 5px 20px;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'titulo-Form' 'user-info-Form';
 }
 
-form.form_contact h2 {
+.titulo-form{
+    grid-area: titulo-form;
     /*font-size: 25px; */
     font-weight: 600;
     color: #303030;
     margin-bottom: 66px;
 }
 
-form.form_contact .user_info {
-    display: flex;
-    flex-direction: column;
+.user_info{    
+    grid-area: user-info-Form;
+    display: grid;
+
+    grid-template-rows: auto auto auto auto auto ;
+    grid-template-areas: 'nickName-Form' 'email-Form' 'asunto-Form' 'mensaje-Form' 'enviar-Form';
+}
+
+.name_nick {
+    grid-area: nickName-Form;
+    grid-template-columns: auto auto;
+    grid-template-areas: 'name lastname';
+
+}
+.nombre{
+    grid-area:name ;
+}
+.apellido{
+    grid-area:lastname ;
 }
 
 
-form.form_contact .user_info .name_nick label {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    width: 100px;
-    padding-right: 5px;
-    align-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-form.form_contact .user_info .name_nick input {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    width: 50px;
-    padding-right: 5px;
-    align-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 
-form.form_contact .user_info .name_nick {
-    display: flex;
-    flex-direction: column;
-    height: 75px;
-    width: 237px;
-    padding-right: 5px;
-    align-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
 form.form_contact label {
     font-weight: 600;
 }
@@ -114,29 +186,58 @@ form.form_contact .user_info .name_nick p{
     margin-right: 20px;
 }
 
+.grid-contacto-mapa{
+    grid-area: contacto-map;
+    width: inherit;
+    height: 275px;
+}
+
+.mapa-body{
+    position: absolute;
+   
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0px -15px 10px rgba(0, 0, 0, 0.25));
+}
+.mapa-body iframe{
+
+    width: inherit;
+}
+
+/* Formulario de contacto*/
+
 form.form_contact input,
 form.form_contact textarea {
-     width: 100%;
+    width: 100%;
     padding: 8px 3px 5px 5px;
     margin-bottom: 20px;
-    /* margin-left: 20px; */
-    /* border: none; */
-    /* border-bottom: 2px solid #D1D1D1; */
     font-family: 'Open sans';
     color: #5A5A5A;
     font-size: 14px;
     font-weight: 400;
 }
 
-form.form_contact textarea {
-    max-width: 100%;
-    min-width: 100%;
-    max-height: 90px;
+form.form_contact .user_info .name_nick input {
+    width: 90%;
+    align-content: space-between;
+  
 }
 
+form.form_contact .user_info .name_nick label {
+    display: grid;
+    justify-content: space-between;
+}
+
+form.form_contact textarea {
+     max-width: auto; 
+    /* min-width: 100%; */
+    height: 90px;
+    max-height: 120px;
+}
+/********Boton donar***********/
 form.form_contact input[type="submit"] {
-    width: 180px;
-    background: #4091EC;
+    /* width: 180px; */
+    background: #BC6C24;
     padding: 10px;
     border: none;
     border-radius: 25px;
@@ -149,96 +250,7 @@ form.form_contact input[type="submit"] {
 }
 
 form.form_contact input[type="submit"]:hover {
-    background: #3371B6;
-}
-
-
-.mapa-body{
-    /* grid-column-start: 1; */
-    /* grid-column-end: 4; */
-    /* grid-row: 4; */
-    /* position: relative; */
-    /* align-content: space-around; */
-    /* justify-content: space-around; */
-    /* justify-items: center; */
-    /* align-items: stretch; */
-    /*position: absolute;*/
-    grid-area: contacto-map;
-    left: 43px;
-    top: 2376px;
-    filter: drop-shadow(0px -15px 10px rgba(0, 0, 0, 0.25));
-}
-.mapa-body iframe{
-    width: 1850PX;
-    height: 600px;
-}
-
-.item5{
-    grid-area: contacto-area;
-    grid-column: 1;
-
-    height: auto;
-    grid-row: 3;
-    display: grid;
-    border: 0px;
-    background:white;
-    align-items: center;
-    padding-top: 300px;
-}
-.item6{
-    grid-area: contacto-area;
-    grid-column-start: 2;
-    /* grid-column-end: 4; */
-    height: 2000PX;
-    grid-row: 3;
-    display: grid;
-    border: 0px;
-    background: #BC6D2A;
-    align-items: center;
-    padding-top: 300px;
-}
-
-
-.item5 div{
-    grid-row: 2;
-    border: 0px;
-    /* display: block; */
-    /* padding-top: 55px; */
-    /* padding-bottom: 55px; */
-    /* padding-left: 1px; */
-    /* padding-right: 20px; */
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-  
-}
-
-
-
-
-
-.item6{
-    grid-area: contacto-enlaces;
-}
-
-.item6 div{
-    display: flex;
-    /* grid-row: 2; */
-    border: 0px;
-    display: block;
-    padding: 20px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.user_info{    
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    background: #d1813b;
 }
 
 
@@ -315,26 +327,12 @@ form.form_contact input[type="submit"]:hover {
     pointer-events: auto;
     opacity: 1;
   }
-/**Footer*/
-/* .ondulado-footer img {
-    width: 110%;
-    position: relative;
-    z-index: 9;
-    top: -246px;
 
-} */
-/* footer{
-position: relative;
-    justify-content: space-around;
-    display: grid;
-    grid-column: 1 / 4;
-    height: 640px;
-    font-family: 'Roboto', sans-serif;
-    background-image: url(../img/bg-footer.png);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-     align-items: center;
-    z-index: 20;
-    bottom: 69px;
-    height: 500px;
-} */
+/***************Footer original pra superponer el mapa y footer*****************/
+
+footer{
+
+    /* top: -11em; */
+    position: relative;
+    z-index: 1;
+} 
