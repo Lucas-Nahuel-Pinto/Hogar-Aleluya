@@ -2,9 +2,11 @@
 <html lang="es">
 
 <head>
+  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="10">
     <title>Contacto</title>
     <link rel="stylesheet" href="./css/style-master.css" />
     <link rel="stylesheet" href="./css/styles-contacto.css" />
@@ -14,7 +16,7 @@
 </head>
 
 <body>
-
+   
     <!-- #foto de inicio de paginas y header.(empieza aca)-->
 
     <header class="header-row">
@@ -122,8 +124,7 @@
                 </div>
             
 
-                <form class="form_contact"
-                    action="./php/scriptEnviarAContacto.php" method="post"
+                <form action="./php/scriptEnviarAContacto.php" method="post" class="form_contact"
                     onsubmit="return validarForm();">
                     <h2 class="titulo-form h-medium">FORMULARIO</h2>
 
@@ -137,31 +138,26 @@
                            
                             <div class="apellido">
 
-                                <label for="phone">Apellido</label>
+                                <label for="phone">Apellido*</label>
                                 <input type="text" id="nickname" name="apellido" required>
                             </div>
                        
 
                         </div>
 
-
                         <div class="email-form">
                             <label for="email">E - Mail*</label>
                             <input type="text" id="email" name="correo" required>
-
                         </div>
-
 
                         <div class="asunto-form">
                             <label for="Asunto">Asunto*</label>
                             <input type="text" id="Asunto" name="asunto" required>
                         </div>
-
                         <div class="mensaje-form">
                             <label for="mensaje">Mensaje *</label>
                             <textarea id="mensaje" name="mensaje" required></textarea>
                         </div>
-
                         <div class="botonEnviar">
                             <input type="submit" value="Enviar" id="btnSend">
                         </div>

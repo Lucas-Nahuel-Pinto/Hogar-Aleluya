@@ -2,6 +2,7 @@
 /***
 Archivo de configuracion de la mensajeria de los datos */
 //llamada-a-los-campos
+function php_func_email(){
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $correo = $_POST['correo'];
@@ -13,8 +14,14 @@ $asunto = "prueba  de envio de mensaje con php";
 $carte = "De: $nombre $apellido\n";
 $carte .= "Correo: $correo\n";
 $carte .= "Mensaje: $mensaje";
-
+echo "$asunto $carte $destinatario" ;
 //enviando mensaje
-mail($desinatario,$asunto,$carte);
-header('Location:../contacto.html');
+mail($destinatario,$asunto,$carte);
+// header('Location:../contacto.html');
+ echo'<script type="text/javascript"> 
+ location.href="../contacto.html";
+ alert("Mensaje Enviado Corecctamente:\n Gracias por contactar");
+	</script>';
+}
+php_func_email();
 ?>
