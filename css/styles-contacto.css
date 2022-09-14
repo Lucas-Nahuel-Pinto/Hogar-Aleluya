@@ -35,7 +35,7 @@ body
     auto;
     grid-template-areas: 
     'header-row'
-    'index-main-row'
+    'main-row'
     'footer-row';
 
     background-color: rgb(255, 255, 255);
@@ -43,7 +43,7 @@ body
 
 
 .grid-container{
-    grid-area:'main-grid-row';
+    grid-area:'main-row';
     display: grid;
     background-color: cornsilk;
     /* padding-top: 350px; */
