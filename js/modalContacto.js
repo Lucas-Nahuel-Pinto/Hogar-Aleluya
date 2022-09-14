@@ -1,8 +1,9 @@
-const open = document.getElementById('btnSend');
+const open = document.getElementById('Modal');
+// const open = document.getElementById('btnSend');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('btnSendAgain');
 
-open.addEventListener('click', () => {
+open.addEventListener('onclick', () => {
   modal_container.classList.add('show');  
 });
 
