@@ -45,15 +45,10 @@ main {
 .grid-container{
     /***********************/
         /* position: relative;*/
-        grid-area: main-row;
         background-image: url('../img/preguntas-frecuentes/bg-preguntas-frecuentes.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
-    
-        /* height: 1582px;
-       */
-        position: relative;
-        background-color: #fff;
+        height: 1582px;
     /***********************/
     grid-area:'main-row';
     display: grid;
@@ -65,7 +60,7 @@ main {
 }
 
 .preg-frec-presentacion{
-    grid-area:'presentacion';
+    grid-area:presentacion;
     display: grid;
     justify-items: start;
     position: relative;
@@ -101,7 +96,7 @@ main {
 /*! ============= Categorias ============= */
 /*! =================================================*/
 .categorias {
-    grid-area:'categorias';
+    grid-area:categorias;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -109,10 +104,11 @@ main {
     border: black;
     border-style: double;
     border-radius: 50px;
-    width: 500px;
+    width: 60%;
     padding: 30px;
     position: relative;
     left: 5%;
+    height: fit-content;
 }
 
 .categoria {
@@ -188,7 +184,7 @@ main {
 /*! ============= Preguntas ============= */
 /*! =================================================*/
 .preguntas {
-    grid-area:'preguntas-categoria';
+    grid-area:preguntas-categoria;
     width: 800px;
     position: relative;
     left: 5%;
@@ -260,7 +256,7 @@ main {
 /*********************************/
 /***********************************/
 .preg-frec-contactos{
-    grid-area:'contacto';
+    grid-area:contacto;
     display: grid;
     margin: 5%;
     height: 200px;
