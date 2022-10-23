@@ -310,13 +310,19 @@ body
     grid-area: navbar-row;
     position: relative;
      */
-
+    /* 
     display: grid;
     grid-column: 1 / 4;
     position: absolute;
     top: 0px;
-    margin: 0px;
-    
+    margin: 0px; */
+
+    display: block;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px; 
 }
 
 .hero img

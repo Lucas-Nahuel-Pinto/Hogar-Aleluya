@@ -228,7 +228,7 @@ main {
     opacity: 0;
     transition: .3s ease all;
     align-items: flex-start;
-    padding-left: 1%;
+    padding-left: 2%;
 }
 
 .contenedor-pregunta.activa .respuesta {
@@ -271,16 +271,18 @@ main {
 .preg-frec-contactos{
     grid-area: contacto;
     display: grid;
-    /* margin: 5%; */
+    left: 5%;
+    width: 60%;
     /* height: 200px; */
-    justify-content: center;
-    align-content: space-evenly;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
     justify-items: start;
-    align-items: center;
 }
 .preg-frec-contactos-descripcion{
     color: white;
-    width: 50%;
+    width: 80%;
+    font-size: 20px;
 }
 
 /***************Boton Contacto*********************/
