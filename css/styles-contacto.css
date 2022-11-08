@@ -334,4 +334,16 @@ footer{
     /* top: -11em; */
     position: relative;
     z-index: 1;
+
 } 
+.footer-top-row{
+
+    /* top: -11em; */
+    position: relative;
+    z-index: 1;
+    
+    pointer-events: none;
+
+} 
+
+

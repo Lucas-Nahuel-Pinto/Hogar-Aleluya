@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="10">
+    <!-- <meta http-equiv="refresh" content="10"> -->
     <title>Contacto</title>
     <link rel="stylesheet" href="./css/style-master.css" />
     <link rel="stylesheet" href="./css/styles-contacto.css" />
@@ -125,7 +125,10 @@
             
 
                 <form action="./php/scriptEnviarAContacto.php" method="post" class="form_contact"
-                    onsubmit="return validarForm();">
+                    onsubmit="return php_func-email();"
+                    id="Modal">
+                    <!-- onsubmit="return php_func-email();"
+                    onsubmit="return validarForm();"> -->
                     <h2 class="titulo-form h-medium">FORMULARIO</h2>
 
                     <div class="user_info">
@@ -216,8 +219,8 @@
 <footer class="footer-row">
 
     <div class="footer-top-row">
-        <img src="./img/bg-footer-estilizado-150px.png">
-            
+        <!-- <img src="./img/bg-footer-estilizado-150px.png"> -->
+        <img src="./img/bg-footerUltraSmall.svg">
     </div>
 
     <div class="footer-center-row">
@@ -263,7 +266,7 @@
             <div class="footer-map-row">
             <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.7318192217535!2d-58.78897325012756!3d-34.433566580408176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9ede2631b3d7%3A0x3c663976d42c6cd1!2sHogar%20Aleluya!5e0!3m2!1ses-419!2sar!4v1635621270283!5m2!1ses-419!2sar"
-                    width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
                 </div>
 
         </div>
@@ -326,7 +329,7 @@
 <!-- # Nuevo Footer.(termina aca)-->
     <script src="js\modalContacto.js"></script>
     <script src="js\scriptValidarContacto.js"></script>
-    <!--Scritp de la iconografia----------->
+    <!-- Scritp de la iconografia--------- -->
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
 </body>
 
