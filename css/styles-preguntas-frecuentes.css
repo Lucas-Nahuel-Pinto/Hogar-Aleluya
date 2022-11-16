@@ -53,7 +53,7 @@ main {
     background-color: white;
     /* padding-top: 350px; */
     position: relative;
-    grid-template-rows: 20% 12% auto 20%;
+    grid-template-rows: 20% 12% 48% 20%;
     grid-template-areas:
         'presentacion'
         'categorias'
@@ -170,7 +170,9 @@ main {
 
 .contenedor-pregunta {
     /* background: #fff; */
-    background:#f5f2f24a;
+    /* background:#f5f2f24a; */
+    background:#f5f2f285;
+  
     padding: 3%;
     border: 2px solid transparent;
     border-radius: 10px;
@@ -185,6 +187,7 @@ main {
 
 .contenedor-pregunta.activa {
     border: 2px solid var(--primario);
+    font-weight: 600;
 }
 
 /*! =================================================*/
@@ -203,7 +206,7 @@ main {
 }
 
 .pregunta {
-    font-weight: 700;
+    /* font-weight: 500;  */
     font-size: 20px;
     line-height: 20px;
     display: flex;
@@ -229,6 +232,7 @@ main {
     transition: .3s ease all;
     align-items: flex-start;
     padding-left: 2%;
+    font-weight: 600;
 }
 
 .contenedor-pregunta.activa .respuesta {
@@ -280,9 +284,14 @@ main {
     justify-items: start;
 }
 .preg-frec-contactos-descripcion{
-    color: white;
+    color: black;
     width: 80%;
     font-size: 20px;
+    /* font-family: 'Roboto'; */
+    font-style: normal;
+    font-weight: 600;
+
+line-height: 30px; 
 }
 
 /***************Boton Contacto*********************/
@@ -305,5 +314,6 @@ main {
 /******************************/
 footer 
 {
-    background-color: #72b93b;
+    background-color: #F4E0CA;
+    
 }   
