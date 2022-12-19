@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   
+
     <!-- #foto de inicio de paginas y header.(empieza aca)-->
 
     <header class="header-row">
@@ -31,8 +31,7 @@
 
             <div class="isologo-col">
                 <div class="circulo-header-logo">
-                    <svg viewBox="0 0 373 219" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 373 219" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M-60 19.5C-60 -90.6808 29.3192 -180 139.5 -180H173.5C283.681 -180 373 -90.6808 373 19.5C373 129.681 283.681 219 173.5 219H139.5C29.3192 219 -60 129.681 -60 19.5Z"
                             fill="#BC6C24">
@@ -103,63 +102,63 @@
             <h1>Contacto</h1>
         </div>
         <!-- <div class="hero-row"> -->
-            <div class="hero-marginBottom-row">
-                <img class="hero-marginBottom-row-img" src="./img/contacto\borde-inf.png">
-            </div>
-  
+        <div class="hero-marginBottom-row">
+            <img class="hero-marginBottom-row-img" src="./img/contacto\borde-inf.png">
+        </div>
+
     </header>
 
 
     <!-- # header.(termina aca)-->
 
-<div class="grid-container">
+    <div class="grid-container">
         <div class="grid-contacto">
             <div class="contacto-Form-area">
                 <div class="contacto-form-area-bienvenida">
-                
-                <h1 class="titulo-bienvenida h-medium">Contactenos</h1>
-                <h3 class='texto-bienvenida p-medium'> Te invitamos a contactarte con nosotros, llenando los campos de abajo y dejando un comentario con
-                    la
-                    sugerencia o inquietud que tengas.,<br> tratando de generar nuevas alternativas personales que </h3>
+
+                    <h1 class="titulo-bienvenida h-medium">Contactenos</h1>
+                    <h3 class='texto-bienvenida p-medium'> Te invitamos a contactarte con nosotros, llenando los campos
+                        de abajo y dejando un comentario con
+                        la
+                        sugerencia o inquietud que tengas.,<br> tratando de generar nuevas alternativas personales que
+                    </h3>
                 </div>
-            
 
                 <form action="./php/scriptEnviarAContacto.php" method="post" class="form_contact"
-                    onsubmit="return php_func-email();"
-                    id="Modal">
-                    <!-- onsubmit="return php_func-email();"
-                    onsubmit="return validarForm();"> -->
-                    <h2 class="titulo-form h-medium">FORMULARIO</h2>
+                 id="Modal"
+                    onsubmit="return validarFormulario();">
+                    <!-- onsubmit="return validarForm();">  -->
+                    <h2 class="titulo-form h-medium">FORMULARIOaaaaaaaaa</h2>
 
                     <div class="user_info">
 
                         <div class="name_nick">
-                            <div class="nombre"> 
-                                     <label for="names">Nombres *</label>
-                                <input type="text" id="names" name="nombre" required>
+                            <div class="nombre">
+                                <label for="names">Nombres *</label>
+                                <input type="text" id="names" name="nombre">
                             </div>
-                           
+
                             <div class="apellido">
 
                                 <label for="phone">Apellido*</label>
-                                <input type="text" id="nickname" name="apellido" required>
+                                <input type="text" id="nickname" name="apellido">
                             </div>
-                       
+
 
                         </div>
 
                         <div class="email-form">
                             <label for="email">E - Mail*</label>
-                            <input type="text" id="email" name="correo" required>
+                            <input type="text" id="email" name="correo">
                         </div>
 
                         <div class="asunto-form">
                             <label for="Asunto">Asunto*</label>
-                            <input type="text" id="Asunto" name="asunto" required>
+                            <input type="text" id="Asunto" name="asunto">
                         </div>
                         <div class="mensaje-form">
                             <label for="mensaje">Mensaje *</label>
-                            <textarea id="mensaje" name="mensaje" required></textarea>
+                            <textarea id="mensaje" name="mensaje"></textarea>
                         </div>
                         <div class="botonEnviar">
                             <input type="submit" value="Enviar" id="btnSend">
@@ -177,21 +176,27 @@
 
                 <div>
                     <div class="p-small">
-                      <h2> Datos de la Ong</h2>
+                        <h2> Datos de la Ong</h2>
                     </div>
-                 
-                    
-                    <p><iconify-icon icon="el:map-marker"></iconify-icon>Manuel Alberti 1197, Pilar.</p>
-                   
-                    <p><iconify-icon icon="ci:phone"></iconify-icon>+54 9 11 4868-2689</p>
-                    
-                    <p><iconify-icon icon="ion:mail-sharp"></iconify-icon>hogar.aleluya.01@gmail.com</p>
+
+
+                    <p>
+                        <iconify-icon icon="el:map-marker"></iconify-icon>Manuel Alberti 1197, Pilar.
+                    </p>
+
+                    <p>
+                        <iconify-icon icon="ci:phone"></iconify-icon>+54 9 11 4868-2689
+                    </p>
+
+                    <p>
+                        <iconify-icon icon="ion:mail-sharp"></iconify-icon>hogar.aleluya.01@gmail.com
+                    </p>
                 </div>
 
                 <div>
                     <div class="p-small">
-                       <h2>Horarios</h2>
-                      </div>
+                        <h2>Horarios</h2>
+                    </div>
                     <p> Lunes a Viernes: 9:00 hs a 18:00 hs<br> Sabados: 10:00 hs a 12:00 hs</p>
 
                 </div>
@@ -208,125 +213,123 @@
         </div>
         <div id="modal_container" class="Modal_enviado">
             <div class="Contenedor_modal">
-
                 <h1>"El mensaje ha sido enviado correctamente!"</h1>
                 <input type="submit" value="Enviar nuevo mensaje" id="btnSendAgain">
             </div>
         </div>
-</div>
-
-<!-- # Nuevo Footer.(empieza aca)-->
-<footer class="footer-row">
-
-    <div class="footer-top-row">
-        <!-- <img src="./img/bg-footer-estilizado-150px.png"> -->
-        <img src="./img/bg-footerUltraSmall.svg">
     </div>
 
-    <div class="footer-center-row">
+    <!-- # Nuevo Footer.(empieza aca)-->
+    <footer class="footer-row">
 
-        <div class="footer-orgData-col">
+        <div class="footer-top-row">
+            <!-- <img src="./img/bg-footer-estilizado-150px.png"> -->
+            <img src="./img/bg-footerUltraSmall.svg">
+        </div>
 
-            <div class="footer-orgData-row">
+        <div class="footer-center-row">
 
-                <div class="footer-dir-row">
-                    <div class="footer-dir-icon">
-                        <img src="./img/icono-direccion.png">
+            <div class="footer-orgData-col">
+
+                <div class="footer-orgData-row">
+
+                    <div class="footer-dir-row">
+                        <div class="footer-dir-icon">
+                            <img src="./img/icono-direccion.png">
+                        </div>
+                        <div class="footer-dir-text">
+                            <p>Los Narcisos 1197 -<br>
+                                (1667) Manuel Alberti –<br>
+                                PILAR - Pcia de Bs.As.
+                            </p>
+                        </div>
                     </div>
-                    <div class="footer-dir-text">
-                        <p>Los Narcisos 1197 -<br>
-                            (1667) Manuel Alberti –<br>
-                            PILAR - Pcia de Bs.As.
-                        </p>
+                    <div class="footer-tel-row">
+                        <div class="footer-tel-icon">
+                            <img src="./img/icono-telefono.png">
+                        </div>
+                        <div class="footer-tel-text">
+                            <p>
+                                02320-403550
+                                </h5>
+                        </div>
                     </div>
+                    <div class="footer-email-row">
+                        <div class="footer-email-icon">
+                            <img src="./img/icono-correo.png">
+                        </div>
+                        <div class="footer-email-text">
+                            <p>
+                                hogar.aleluya.01@gmail.com
+                                </h5>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="footer-tel-row">
-                    <div class="footer-tel-icon">
-                        <img src="./img/icono-telefono.png">
-                    </div>
-                    <div class="footer-tel-text">
-                        <p>
-                            02320-403550
-                        </h5>
-                    </div>
-                </div>
-                <div class="footer-email-row">
-                    <div class="footer-email-icon">
-                        <img src="./img/icono-correo.png">
-                    </div>
-                    <div class="footer-email-text">
-                        <p>
-                            hogar.aleluya.01@gmail.com
-                        </h5>
-                    </div>
+
+                <div class="footer-map-row">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.7318192217535!2d-58.78897325012756!3d-34.433566580408176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9ede2631b3d7%3A0x3c663976d42c6cd1!2sHogar%20Aleluya!5e0!3m2!1ses-419!2sar!4v1635621270283!5m2!1ses-419!2sar"
+                        width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
             </div>
 
-            <div class="footer-map-row">
-            <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.7318192217535!2d-58.78897325012756!3d-34.433566580408176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9ede2631b3d7%3A0x3c663976d42c6cd1!2sHogar%20Aleluya!5e0!3m2!1ses-419!2sar!4v1635621270283!5m2!1ses-419!2sar"
-                    width="250" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
-                </div>
-
-        </div>
-
-        <div class="footer-isologo-col">
-            <img class="footer-isologo" 
-            src="./img/ha-logo-footer-transparente.png">
-        </div>
-
-        <div class="footer-faq-col">
-
-            <div class="footer-faq-row">
-
-                <h2>
-                    Preguntas frecuentes
-                </h2>
-                <p class="p-small">
-                    <br>
-                    Se ofrece aquí respuesta a una selec-<br>
-                    ción de las preguntas más frecuentes
-                </p>
-                <a class="faq-link" href="#">
-                    Leer más
-                </a>
-
+            <div class="footer-isologo-col">
+                <img class="footer-isologo" src="./img/ha-logo-footer-transparente.png">
             </div>
 
-            <div class="footer-followUs-row">
+            <div class="footer-faq-col">
 
-                <h2>
-                    Siguenos en
-                </h2>
-                
-                <div class="socialNetwoks-icons-row">
-        
+                <div class="footer-faq-row">
+
+                    <h2>
+                        Preguntas frecuentes
+                    </h2>
+                    <p class="p-small">
+                        <br>
+                        Se ofrece aquí respuesta a una selec-<br>
+                        ción de las preguntas más frecuentes
+                    </p>
+                    <a class="faq-link" href="#">
+                        Leer más
+                    </a>
+
+                </div>
+
+                <div class="footer-followUs-row">
+
+                    <h2>
+                        Siguenos en
+                    </h2>
+
+                    <div class="socialNetwoks-icons-row">
+
                         <a class="fb-icon" href="#">
-                            <img  src="./img/icono-facebook.png">
+                            <img src="./img/icono-facebook.png">
                         </a>
                         <a class="instagram-icon" href="#">
                             <img src="./img/icono-instagram.png">
                         </a>
-                
+
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
+        <div class="footer-bottom-row">
 
-    <div class="footer-bottom-row">
+            <p class="footer-copyright">
+                Ⓒ All Rights Reserved - Hogar Aleluya 2022.
+            </p>
 
-        <p class="footer-copyright">
-            Ⓒ All Rights Reserved - Hogar Aleluya 2022.
-        </p>
+        </div>
 
-    </div>
-
-</footer>
-<!-- # Nuevo Footer.(termina aca)-->
+    </footer>
+    <!-- # Nuevo Footer.(termina aca)-->
     <script src="js\modalContacto.js"></script>
     <script src="js\scriptValidarContacto.js"></script>
     <!-- Scritp de la iconografia--------- -->
