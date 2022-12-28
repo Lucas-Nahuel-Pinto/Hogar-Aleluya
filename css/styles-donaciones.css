@@ -39,20 +39,22 @@ src: url('./fonts/araboto-bold-400.ttf');
     padding-bottom:90px; */
     grid-template-rows: auto auto ;
     grid-template-areas: 'presentacion-row' 'roperito';
-    background-color:#0094FF;
+    background-color:white; 
 }
 
 .presentacionesTop{
+    background-color: #0094FF;
     display: grid;
     grid-area:'presentacion-row';
     grid-template-columns: auto auto ;
     grid-template-areas: 'presentacion-izq presentacion-der';
-    background-color: rgb(235, 213, 213);
+    /* background-color: rgb(235, 213, 213); */
 }
 .presentacionesBottom{
     display: grid;
     grid-area:'roperito';
-    background-color: rgb(231, 138, 138);
+    background-color: #0094FF;
+    border-radius: 0px 0px 1000px 1000px;
 }
 
 .prsentacionDonaciones div{
