@@ -18,56 +18,150 @@ src: url('./fonts/araboto-bold-400.ttf');
     
 }
 
-.item4{
+.grid-container{
+    grid-area:'main-row';
+    display: grid;
+    background-color: cornsilk;
+    /* padding-top: 350px; */
+    position: relative;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 'donaciones-presentacion' 'donaciones-donantes' 'donaciones-donar';
+}
+
+
+.presentacionDonaciones{
+    grid-area:'donaciones-presentacion';
     grid-column: 1 / 4;
-    margin-top:-18px;
+    display: grid;
+    border: 0px;
+    position:relative;
+    /* bottom:1100px;
+    padding-bottom:90px; */
+    grid-template-rows: auto auto ;
+    grid-template-areas: 'presentacion-row' 'roperito';
     background-color:#0094FF;
-    height:1900px;
 }
 
-
-
-
-.item5{
-    grid-column: 1 / 4;
+.presentacionesTop{
     display: grid;
-    border: 0px;
-    position:relative;
-    bottom:1100px;
-    padding-bottom:90px;
+    grid-area:'presentacion-row';
+    grid-template-columns: auto auto ;
+    grid-template-areas: 'presentacion-izq presentacion-der';
+    background-color: rgb(235, 213, 213);
 }
-
-.item6{
-    grid-column: 1 / 4;
-    border: 0px;
-    position:relative;
-    bottom:1100px;
-}
-
-.item7{
-    grid-column: 1 / 4;
-    border: 0px;
-    position:relative;
-    
-}
-
-.item8{
-    grid-column: 1 / 4;
+.presentacionesBottom{
     display: grid;
-    border: 0px;
-    position:relative;
-    
+    grid-area:'roperito';
+    background-color: rgb(231, 138, 138);
 }
 
-
-
-
-
-.item5 div{
+.prsentacionDonaciones div{
+    grid-row: 2;
+    border: 0px;
+}
+.prsentacionDonaciones img{
+    grid-row: 2;
+    border: 0px;
+}.prsentacionDonaciones .titulo-blanco{
     grid-row: 2;
     border: 0px;
 }
 
+.prsentacionDonaciones h4{
+    position:relative;
+    left:135px;
+}
+
+
+.item6 img{
+    height:370px;
+    width:410px;
+    
+}
+
+.roperito{
+    display: grid;
+    grid-area:roperito;
+    grid-column: 1 / 4;
+    border: 0px;
+    position:relative;
+    justify-content: center;
+}
+
+.roperito .texto-blanco{
+    text-align: center;
+    width:610px;
+    position:relative;
+    left:30px;
+}
+
+.roperito img{
+    display: grid;
+    height:370px;
+    width:410px;
+}
+
+
+.img-roperito{
+    display: grid;
+    justify-content: center;
+    padding-top:50px;
+}
+
+
+.roperocomunitario .titulo-blanco2{
+    padding-bottom:40px;
+}
+
+/* item7 */
+.Donantes{
+    grid-area:donaciones-donantes;
+    grid-column: 1 / 4;
+    border: 0px;
+    position:relative;
+    
+}
+/* item8 */
+.Donar{
+    background-image: url(../img/donaciones/bg-cielo.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 100%  100%;
+    grid-area:donaciones-donar;
+    grid-column: 1 / 4;
+    display: grid;
+    border: 0px;
+    position:relative;
+    width: 100%;
+    height: 1200px;
+    
+}
+
+
+.quiero-donar{
+    display: grid;
+    background-image: url(../img/donaciones/bg-nube.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.quiero-donar .titulo-negro{
+    padding: 10px;
+      
+  }
+
+
+  .quiero-donar .texto-negro{
+    /* font-family: 'Roboto';  */
+    padding: 10px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+}
 .item9 div {
     grid-row: 2;
     display: grid;
@@ -76,6 +170,33 @@ src: url('./fonts/araboto-bold-400.ttf');
 
 
 
+.verMas-btn
+{
+    display: grid;
+
+    background: linear-gradient(0deg, rgba(201,157,0,1) 0%, rgba(255,213,28,1) 20%, rgba(255,236,30,1) 100%);
+    
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px #BFBCBC;
+    
+    width: 200px;
+    height: 80px;
+
+    align-items: center;
+
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #83331b;
+    font-weight: bolder;
+    font-size: 26px;
+}
+.verMas-btn a{
+    display: grid;
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+    text-align: right;
+    justify-content: center;
+}
 
 
 /*****************************************************/
@@ -99,13 +220,6 @@ src: url('./fonts/araboto-bold-400.ttf');
     flex-direction: row;
     flex-wrap: nowrap;
     font-size: 100px;
-}
-
-.item4 img{
-    
-    position:relative;
-    top:500px;
-    right:61px;
 }
 
 .titulo-negro{
@@ -155,53 +269,10 @@ src: url('./fonts/araboto-bold-400.ttf');
     color:white;
     
 }
-
-.item5 img{
-    height:396px;
-    width:478px;
-    position:relative;
-    right:100px;
-    top:200px;
+footer 
+{
+    background-color: #28A5FF;
     
-}
+}   
 
-.item5 .titulo-blanco{
-    text-align: left;
-    position:relative;
-    left:110px;
-    padding-bottom:40px;
-    padding-top:100px;
-}
 
-.item6 .texto-blanco{
-    text-align: center;
-    width:610px;
-    position:relative;
-    left:30px;
-    
-}
-
-.item6{
-    justify-content: center;
-    
-}
-
-.item5 h4{
-    position:relative;
-    left:135px;
-}
-
-.roperito-comunitario .titulo-blanco2{
-    padding-bottom:40px;
-}
-
-.item6 img{
-    height:370px;
-    width:410px;
-    
-}
-
-.img-roperito{
-    justify-content: center;
-    padding-top:50px;
-}
