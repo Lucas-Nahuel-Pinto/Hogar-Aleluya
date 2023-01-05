@@ -137,6 +137,7 @@ src: url('./fonts/araboto-bold-400.ttf');
         'Donantes-main-row';
     grid-row-gap: 30px;
     justify-content: center;
+    background-color: white;
 }
 
 .donantes-title{
@@ -231,9 +232,14 @@ src: url('./fonts/araboto-bold-400.ttf');
     grid-area: Donantes-main-row;
 
     grid-template-columns: 
-    auto auto auto auto auto;
+    5% 30% 30% 30% 5%;;
     grid-template-areas: 
     'donantes-slider-leftArrow-col donaciones-donantes-art1 donaciones-donantes-art2 donaciones-donantes-art3 donantes-slider-rightArrow-col';
+    grid-gap: 6px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
 }
 
 /* 
@@ -275,6 +281,14 @@ src: url('./fonts/araboto-bold-400.ttf');
     'index-testimonios-com-row';
 }
 
+
+.slidesDonantes {
+
+}
+.slidesDonantes img{
+    width: 75%;
+    height: 75%;
+}
 .donaciones-donantes-art1
 {
     grid-area:donaciones-donantes-art1;
