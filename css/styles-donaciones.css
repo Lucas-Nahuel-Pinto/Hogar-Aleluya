@@ -125,27 +125,26 @@ src: url('./fonts/araboto-bold-400.ttf');
 
 /* item7 */
 .Donantes{
+
     display: grid;
-    grid-area:donaciones-donantes;
+    grid-area: donaciones-donantes;
     grid-column: 1 / 4;
     border: 0px;
-    position:relative;
-
-    grid-template-rows: 
-    auto 
-    auto;
-    grid-template-areas: 
-    'Donantes-title-row' 
-    'Donantes-main-row';  
-    justify-items: center;
+    position: relative;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        'Donantes-title-row'
+        'Donantes-main-row';
     grid-row-gap: 30px;
+    justify-content: center;
 }
 
 .donantes-title{
-    grid-area:Donantes-title-row;
+    display: grid;
+    grid-area: Donantes-title-row;
     grid-column: 1 / 4;
     border: 0px;
-    position:relative; 
+    position: relative;
     justify-items: center;
 } 
 
