@@ -49,6 +49,7 @@ src: url('./fonts/araboto-bold-400.ttf');
     grid-template-columns: auto auto ;
     grid-template-areas: 'presentacion-izq presentacion-der';
     /* background-color: rgb(235, 213, 213); */
+    padding: 26px;
 }
 
 
