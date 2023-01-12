@@ -182,6 +182,7 @@ src: url('./fonts/araboto-bold-400.ttf');
     border: 0px;
     position: relative;
     justify-items: center;
+    font-size: 66px;
 } 
 
 .Donantes-main-row{
@@ -408,7 +409,7 @@ src: url('./fonts/araboto-bold-400.ttf');
     /* width: 100%; */
     height: 500px;
     align-content: stretch;
-    align-items: end;
+    justify-items: center;
     
 }
 
@@ -418,12 +419,14 @@ src: url('./fonts/araboto-bold-400.ttf');
     background-image: url(../img/donaciones/bg-nube.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: inherit;
-    justify-items: center;
+    background-size: 100% 100%;
     align-content: center;
-    justify-content: center;
-    align-items: end;
+    justify-content: space-around;
     margin: 150px;
+    width: 75%;
+    padding: 60px;
+    justify-items: center;
+
 }
 .quiero-donar .titulo-negro{
     padding: 10px;
@@ -435,7 +438,8 @@ src: url('./fonts/araboto-bold-400.ttf');
     /* font-family: 'Roboto';  */
     padding: 10px;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 36px;
+   
     line-height: 56px;
     text-align: center;
 }
@@ -501,7 +505,7 @@ src: url('./fonts/araboto-bold-400.ttf');
 
 .titulo-negro{
     font-family:'poetsenone-regular';
-    
+    font-size: 66px;
 }
 
 .titulo-blanco{
@@ -520,6 +524,7 @@ src: url('./fonts/araboto-bold-400.ttf');
 
 .texto-negro{
     font-family:'araboto';
+
     
 }
 
