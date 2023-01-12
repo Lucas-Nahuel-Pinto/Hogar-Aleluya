@@ -45,11 +45,43 @@ src: url('./fonts/araboto-bold-400.ttf');
 .presentacionesTop{
     background-color: #0094FF;
     display: grid;
-    grid-area:'presentacion-row';
-    grid-template-columns: auto auto ;
+    grid-area: 'presentacion-row';
+    grid-template-rows: auto auto ;
+    grid-template-areas: 'presentacionTopTop-row' 'presentacionTopbootom';
+    padding: 80px;
+}
+.preseToprowTop{
+    grid-area: 'presentacionTopTop-row';
+    display: grid;
+    grid-template-columns: auto auto;
     grid-template-areas: 'presentacion-izq presentacion-der';
-    /* background-color: rgb(235, 213, 213); */
-    padding: 26px;
+    /* padding: 80px; */
+}
+.presentacion-lectura{
+    grid-area:presentacion-izq ;
+    display: grid;
+}
+
+.text-presentacion{
+
+}
+.text-presentacion-booton{
+    grid-area: presentacionTopbootom;
+
+}
+
+.presentacion-imagen {
+    grid-area: presentacion-der;
+    display: grid;
+    /* width: 85%; */
+    /* height: 80%; */
+    align-items: center;
+    align-content: stretch;
+}
+
+.presentacion-imagen img{
+    /*width: 95%; */
+    height: 80%;
 }
 
 
@@ -492,10 +524,13 @@ src: url('./fonts/araboto-bold-400.ttf');
     font-weight: 100;
     line-height: 32px;
     text-align: left;
-    width:530px;
+    /* width:530px; */
 }
 
 
+.texto-blanco::first-line {
+    color: red;
+  }
 
 
 .texto-negro-bold{
