@@ -380,7 +380,7 @@ form.form_contact input[type="submit"]:hover {
     width: 600px;
     max-width: 100%;
     padding: 25px 25px;
-    border-radius: 5px;
+    border-radius: 36px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 20%);
     text-align: center;
 }
