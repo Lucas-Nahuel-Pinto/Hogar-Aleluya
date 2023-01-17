@@ -200,68 +200,6 @@ src: url('./fonts/araboto-bold-400.ttf');
 }
 /*************************************/
 
-
-
-.index-testimonios-row
-{
-    display: grid;
-    grid-area: index-testimonios-row;
-
-    grid-template-rows: 
-    250px  
-    auto 
-    auto;
-    grid-template-areas: 
-    'index-testimonios-top-row' 
-    'index-testimonios-main-row' 
-    'index-testimonios-bottom-row';  
-
-    background:white;
-}
-
-.index-testimonios-top-row
-{
-    display: grid;
-    grid-area: index-testimonios-top-row;
-}
-
-.index-testimonios-main-row
-{
-    display: grid;
-    grid-area: index-testimonios-main-row;
-    
-    grid-template-rows: 
-    auto 
-    auto 
-    auto;
-    grid-template-areas: 
-    'index-testimonios-title-row' 
-    'index-testimonios-movie-row' 
-    'index-testimonios-articles-row';
-    
-    grid-row-gap: 30px;
-
-    justify-items: center;
-}
-
-.index-testimonios-title-row
-{
-    font-size: 60px;
-    font-family: 'poetsenone-regular';
-    font-weight: 500;
-}
-
-/* .index-testimonios-movie-row
-{
-    display: grid;
-
-    width: 1080px;
-    height: 420px;
-    margin-bottom: 90px;
-    
-    border-radius: 50px;
-} */
-
 .donantes-articles-row
 {
     display: grid;
@@ -278,17 +216,6 @@ src: url('./fonts/araboto-bold-400.ttf');
 
 }
 
-/* 
-.index-testimonios-articles-row
-{
-    display: grid;
-    grid-area: index-testimonios-articles-row;
-
-    grid-template-columns: 
-    auto auto auto auto auto;
-    grid-template-areas: 
-    'donantes-slider-leftArrow-col donaciones-donantes-art1 donaciones-donantes-art2 donaciones-donantes-art3 donantes-slider-rightArrow-col';
-} */
 
 .donantes-slider-leftArrow-col
 {
@@ -303,20 +230,6 @@ src: url('./fonts/araboto-bold-400.ttf');
 
     align-items: center;
 }
-
-
-.index-testimonios-art
-{
-    display: grid;
-
-    grid-template-rows: 
-    auto 
-    auto;
-    grid-template-areas: 
-    'index-testimonios-tp-row' 
-    'index-testimonios-com-row';
-}
-
 
 .slidesDonantes {
 
@@ -340,60 +253,6 @@ src: url('./fonts/araboto-bold-400.ttf');
     grid-area:donaciones-donantes-art3;   
 }
 
-/* 
-.index-testimonios-art4 {
-    border: 1px solid black;
-    display: grid;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-        'index-testimonios-tp-row'
-        'index-testimonios-com-row';
-}  */
-
-.index-testimonios-name
-{
-    font-family: 'calibri';
-    color:rgb(70, 70, 70);
-}
-
-.index-testimonios-profile
-{
-    font-family: 'calibri';
-    color:rgb(70, 70, 70);
-}
-
-.index-testimonios-quote
-{
-    margin-bottom: 60px;
-
-    padding: 27px;
-
-    text-align: justify;
-
-    font-weight: lighter;
-    font-family: "calibri";
-    font-size: 20px;
-    color:rgb(40, 40, 40);   
-}
-
-.index-testimonios-bottom-row
-{
-    display: grid;
-    grid-area: index-testimonios-bottom-row;
-}
-
-.index-testimonios-articles-row
-{
-       display: grid;
-
-       /* width: 80%; */
-       margin-left: 5%;
-       margin-right: 5%;
-
-       align-content: center;
-       justify-items: center;
-       justify-content: space-around;
-}
 /************************************/
 /* item8 */
 .Donar{
