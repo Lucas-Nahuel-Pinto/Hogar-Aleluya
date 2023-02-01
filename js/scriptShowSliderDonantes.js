@@ -102,33 +102,3 @@ function showSliderDonantes(n) {
     //   captionText.innerHTML = slidesDonantesArticles[slideIndexTestimonios-1].alt;
 }
 
-
-s
-
-    // slideIndex = 1;
-    // showSlidesClic(slideIndex);
-    
-    // Next/previous controls
-    // function plusSlides(n) {
-    //   showSlidesClic(slideIndex += n);
-    // }
-    
-    // function showSlidesClic(n) {
-    //   let i;
-    //   let slides = document.getElementsByClassName("mySlides");
-    //   let slides_titulo = document.getElementsByClassName("mySlides-Titulos");
-  
-    //   if (n > slides.length)
-    //    {slideIndex = 1}
-
-    //   if (n < 1)
-    //    {slideIndex = slides.length}
-    //   for (i = 0; i < slides.length; i++) {
-    //     slides[i].style.display = "none";
-    //     slides_titulo[i].style.display = "none";
-    //   }
-   
-    //   slides[slideIndex-1].style.display = "block";
-    //   slides_titulo[slideIndex-1].style.display = "block";
-
-    // }
