@@ -1,4 +1,15 @@
 let slideIndexTestimonios = 1;
+
+
+showSlides();
+
+function showSlides() {
+
+   plusslidesDonantes(1);
+
+  setTimeout(showSlides, 30000); // Change image every 60000--60 seconds 
+}
+
 showSliderDonantes(slideIndexTestimonios);
 
 function plusslidesDonantes(n) {
@@ -6,10 +17,10 @@ function plusslidesDonantes(n) {
     showSliderDonantes(slideIndexTestimonios += n);
 }
 
-function currentSlideTestimonios(n) {
+// function currentSlideTestimonios(n) {
 
-    showSliderDonantes(slideIndexTestimonios = n);
-}
+//     showSliderDonantes(slideIndexTestimonios = n);
+// }
 
 function showSliderDonantes(n) {
     let i;
@@ -90,3 +101,34 @@ function showSliderDonantes(n) {
     //   slides[slideIndexTestimonios-1].style.display = "block";
     //   captionText.innerHTML = slidesDonantesArticles[slideIndexTestimonios-1].alt;
 }
+
+
+s
+
+    // slideIndex = 1;
+    // showSlidesClic(slideIndex);
+    
+    // Next/previous controls
+    // function plusSlides(n) {
+    //   showSlidesClic(slideIndex += n);
+    // }
+    
+    // function showSlidesClic(n) {
+    //   let i;
+    //   let slides = document.getElementsByClassName("mySlides");
+    //   let slides_titulo = document.getElementsByClassName("mySlides-Titulos");
+  
+    //   if (n > slides.length)
+    //    {slideIndex = 1}
+
+    //   if (n < 1)
+    //    {slideIndex = slides.length}
+    //   for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = "none";
+    //     slides_titulo[i].style.display = "none";
+    //   }
+   
+    //   slides[slideIndex-1].style.display = "block";
+    //   slides_titulo[slideIndex-1].style.display = "block";
+
+    // }
