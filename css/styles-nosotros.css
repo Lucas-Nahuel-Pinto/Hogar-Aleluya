@@ -82,9 +82,9 @@ src: url('./fonts/araboto-bold-400.ttf');
 }
 
 
-body{
+/* body{
     background:white;
-}
+} */
 
 .titulo-negro{
     font-family:'poetsenone-regular';
@@ -170,11 +170,17 @@ body{
 /* NUEVAS CONVENCIONES */
 /**********************************/
 .grid-container-nosotros{
+    grid-area: main-row;
     display: grid;
     background-color: cornsilk;
-  
+
     position: relative;
-    grid-template-columns: auto auto auto ;
+    grid-template-areas: 
+    'nuestro-equipo'
+    'nuestros-miembros'
+    'nuestros-historias'
+    'nuestros-misio-vision';
+    grid-template-rows: auto auto auto  auto  auto;
 }
 
 .grid-container-nosotros article{
@@ -200,6 +206,7 @@ body{
 /***************************************/
 .equipo{
     grid-column: 1 / 4;
+    grid-area: nuestro-equipo;
     display: grid;
     border: 0px;
     background:white;
@@ -299,6 +306,7 @@ body{
 .organigrama-profile{}
 /***********************************/
 .members{
+    grid-area: nuestros-miembros;
     grid-column: 1 / 4;
     display: grid;
     border: 0px;
@@ -344,6 +352,7 @@ body{
 /********************************/
 
 .history{    
+    grid-area: nuestros-historias;
     grid-column: 1 / 4;
     background:white;
    justify-content: space-around;
@@ -580,6 +589,7 @@ font-weight:100;}
 /*******************************************************/
 
 .misionVision{
+    grid-area:nuestros-misio-vision;
     grid-column: 1 / 4;
     background:white;
     justify-content: space-around;
