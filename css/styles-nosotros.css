@@ -237,61 +237,128 @@
 /***********************************/
 .members {
     grid-area: nuestros-miembros;
-    /* grid-column: 1 / 4; */
     display: grid;
     border: 0px;
-    /* position: relative;*/
-    grid-area: nuestros-miembros;
-
     height: 1582px;
-
     position: relative;
     background-color: #fff;
-    /* background:#BC6C24; */
+    /* align-items: center; */
+    grid-template-areas:
+    'f-superior' 'f-central' 'f-inferior';
+    grid-template-rows: auto auto auto;
+    grid-auto-columns: 25% 25% 25% 25%;
 }
 
 .members {
-    grid-area: nuestros-miembros;
-    /* grid-column: 1 / 4; */
-    display: grid;
-    border: 0px;
-    /* position: relative;*/
-    grid-area: nuestros-miembros;
     background-image: url('../img/nosotros/bg-integrantes.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    position: relative;
-    background-color: #fff;
-    /* background:#BC6C24; */
+}
+
+/* .member-f1 {
+    grid-area: f-superior;
+    grid-template-areas: 'priemera segunda tercera cuarta';
+    grid-template-columns: 25% 25% 25% 25%;
+}
+ */
+
+ .member-f1 {
+    grid-area: f-superior;  
+    margin-top: 5em; 
+}
+ 
+.member-f2 {
+    grid-row: 2;
+  
+}
+.member-f3 {
+    grid-row: 3;
+    margin-bottom: 14em;
+  
+}
+
+.member-c1 {
+    grid-column: 1;
+  
+}
+
+.member-c2 {
+    grid-column: 2;
+    margin-top: 5em;
+}
+.member-c3 {
+    grid-column: 3;
+    margin-top: 10em;
+  
+}
+
+.member-c4 {
+    grid-column: 4;
+  
 }
 
 
-.members-profile {
-    /* grid-row: 2;
-    border: 0px; */
+
+.members-profile img{
+    width: 150px;
+    height: auto;
+    border-radius: 50px;
+}
+.members-profile{
+    display: grid;
+    width: 150px;
+    height: 187px;
+    border-radius: 50px;
+    justify-items: stretch;
+    align-items: center;
 }
 
 .members article {
-    grid-row: 2;
-    border: 0px;
+    /* grid-row: 2; */
+    /* border: 0px;
+    width: fit-content; */
 }
 
-/* .item6 article{
-    grid-row: 2;
-    border: 0px;
-} */
 
 
+.members-name {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 42px;
+}
 
-.members-name {}
-
-.members-role {}
+.members-role {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+}
 
 .members div {
     grid-row: 2;
     border: 0px;
 }
 
+.members-message{
+display: grid;
+    /* width: 50%; */
+    height: fit-content;
+    grid-column: 1/3;
+}
+
+.members-message p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+
+color: #FFFFFF;
+
+}
 /********************************/
 
 .history {
