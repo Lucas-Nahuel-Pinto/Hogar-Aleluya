@@ -548,16 +548,21 @@ color: #FFFFFF;
     border-radius: 270px;
     background: #FCDE93;
     border: 10px solid #C25C01;
+    display: grid;
 }
 
 .misionVision-title {
     font-size: 46px;
     font-weight: 100;
     text-align: center;
-    width: 300px;
+    width: auto;
     position: relative;
     left: 52px;
-    padding-top: 60px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: grid;
+    justify-items: center;
+    justify-content: space-between;
 }
 
 .misionVision-text {}
@@ -568,6 +573,7 @@ color: #FFFFFF;
     background: red;
     border-radius: 275px;
     background: #FCDE93;
+    display: grid;
 }
 
 /*******************Extras***************/
@@ -584,7 +590,7 @@ color: #FFFFFF;
 
 .misionVision-left .misionVision-text {
     position: relative;
-    bottom: 35px;
+    /* bottom: 35px; */
 }
 
 .misionVision-right .misionVision-text {
