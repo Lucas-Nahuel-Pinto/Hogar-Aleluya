@@ -384,18 +384,26 @@ src: url('./fonts/araboto-bold-400.ttf');
 .grid-container-actividades{
     display: grid;
     background-color: cornsilk;
-    padding-top:  15%;
+    /* padding-top:  15%; */
     position: relative;
-    grid-template-columns: auto auto auto;
+    grid-template-areas:
+    'nubes'
+    'sobrevivir'
+    'talleres';
+    grid-template-rows: auto auto auto;
+    gap: 50px;
 }
 
 .difuminada{
+    grid-area:nubes ;
     grid-column: 1 / 4;
     background:#28A5FF;
 
 }
 
-.nube-slider{}
+.nube-slider{
+    margin: 2em;
+}
 
 .nube-slider-text{
     font-family:'poetsenone-regular';
@@ -405,8 +413,7 @@ src: url('./fonts/araboto-bold-400.ttf');
 
 
 .nube{
-
-    width:0px;  
+    width:  779px;
     margin-bottom:-242px;
 
 }
@@ -439,6 +446,7 @@ src: url('./fonts/araboto-bold-400.ttf');
 }
 
 .sobrevivir{
+    grid-area:sobrevivir;
     grid-column: 1 / 4;
     background:#BC6C24;
     justify-items:center;
@@ -461,10 +469,12 @@ src: url('./fonts/araboto-bold-400.ttf');
 }
 
 .sobrevivir-seguir-divtitle{
-    display:grid;
-    position:relative;
-     left:18%;
-    width:0px;
+    display: grid;
+    display: flex;
+    position: relative;
+    /* left: 18%; */
+    /* width: 0px; */
+    justify-content: flex-end;
 }
 
 .sobrevivir-seguir-text{
@@ -472,22 +482,33 @@ src: url('./fonts/araboto-bold-400.ttf');
 }
 
 .talleres{
-    grid-column: 1 / 4;
+    grid-area:talleres;
+     grid-column: 1 / 4; 
     display: grid;
     border: 0px;
     background:#9E4B00;
+    grid-template-areas: 'taller-izq taller-der';
+    grid-template-columns: auto auto;
 }
 
 .talleres-title{
-    font-family:'poetsenone-regular';
-    color:white;
-    font-size:70px;
+    font-family: 'poetsenone-regular';
+    color: white;
+    font-size: 70px;
     font-weight: 100;
+    grid-row: 1;
+    grid-column: 1 / 3;
+    display: grid;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: stretch;
 }
 
 .talleres-izq{
+   grid-area: taller-izq ;
     padding-left:30px;
     padding-right:30px;
+    grid-row: 2;
 }
 
 .talleres-img{
@@ -495,6 +516,9 @@ src: url('./fonts/araboto-bold-400.ttf');
 }
 
 .talleres-der{
+    display: grid;
+    grid-area: taller-der ;
+    grid-row: 2;
 
 }
 
@@ -504,7 +528,9 @@ src: url('./fonts/araboto-bold-400.ttf');
 }
 
 .talleres-conocermas{
-
+    display: flex;
+    align-content: space-evenly;
+    justify-content: space-around;
 }
 
 .conocermas-divtitle{
@@ -516,7 +542,7 @@ src: url('./fonts/araboto-bold-400.ttf');
 }
 
 .conocermas-seguirleyendo{
-    width:270px;
+    /* width:270px; */
     line-height:40px;
 }
 
