@@ -59,9 +59,9 @@ function showSliderDonantes(n) {
          slidesDonantesArticles[slideIndexTestimonios + 1].className += " donaciones-donantes-art3";
 
 
-        slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "block";
-        slidesDonantesArticles[slideIndexTestimonios].style.display = "block";
-        slidesDonantesArticles[slideIndexTestimonios + 1].style.display = "block";
+        slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "grid";
+        slidesDonantesArticles[slideIndexTestimonios].style.display = "grid";
+        slidesDonantesArticles[slideIndexTestimonios + 1].style.display = "grid";
     } else {
         if (slideIndexTestimonios == slidesDonantesArticles.length) {
             slidesDonantesArticles[slideIndexTestimonios - 1].className += " donaciones-donantes-art1";
@@ -69,9 +69,9 @@ function showSliderDonantes(n) {
             slidesDonantesArticles[1].className += "donaciones-donantes-art3";
    
 
-            slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "block";
-            slidesDonantesArticles[0].style.display = "block";
-            slidesDonantesArticles[1].style.display = "block";
+            slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "grid";
+            slidesDonantesArticles[0].style.display = "grid";
+            slidesDonantesArticles[1].style.display = "grid";
 
         }
     }
@@ -81,9 +81,9 @@ function showSliderDonantes(n) {
           slidesDonantesArticles[slideIndexTestimonios].className += "  donaciones-donantes-art2";
           slidesDonantesArticles[0].className += "  donaciones-donantes-art3";
 
-        slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "block";
-        slidesDonantesArticles[slideIndexTestimonios].style.display = "block";
-        slidesDonantesArticles[0].style.display = "block";
+        slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "grid";
+        slidesDonantesArticles[slideIndexTestimonios].style.display = "grid";
+        slidesDonantesArticles[0].style.display = "grid";
     }
 
 
@@ -91,9 +91,9 @@ function showSliderDonantes(n) {
         slidesDonantesArticles[slideIndexTestimonios - 1].className += " donaciones-donantes-art1";
         slidesDonantesArticles[slideIndexTestimonios].className += " donaciones-donantes-art2";
         slidesDonantesArticles[slideIndexTestimonios + 1].className += " donaciones-donantes-art3";
-        slidesDonantesArticles[slideIndexTestimonios-1].style.display = "block";
-        slidesDonantesArticles[slideIndexTestimonios].style.display = "block";
-        slidesDonantesArticles[slideIndexTestimonios +1].style.display = "block";
+        slidesDonantesArticles[slideIndexTestimonios-1].style.display = "grid";
+        slidesDonantesArticles[slideIndexTestimonios].style.display = "grid";
+        slidesDonantesArticles[slideIndexTestimonios +1].style.display = "grid";
     }
 
 
@@ -101,4 +101,3 @@ function showSliderDonantes(n) {
     //   slides[slideIndexTestimonios-1].style.display = "block";
     //   captionText.innerHTML = slidesDonantesArticles[slideIndexTestimonios-1].alt;
 }
-
