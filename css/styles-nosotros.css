@@ -130,7 +130,7 @@
     display: grid;
     text-align: center;
     color: black;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .grid-container-nosotros div {
@@ -253,6 +253,10 @@
     background-image: url('../img/nosotros/bg-integrantes.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    padding-top: 1em;
+    display: grid;
+    align-content: space-around;
+    padding-bottom: 18em;
 }
 
 /* .member-f1 {
@@ -264,7 +268,7 @@
 
  .member-f1 {
     grid-area: f-superior;  
-    margin-top: 5em; 
+    /* margin-top: 5em;  */
 }
  
 .member-f2 {
@@ -273,8 +277,7 @@
 }
 .member-f3 {
     grid-row: 3;
-    margin-bottom: 14em;
-  
+    /* margin-bottom: 18em; */
 }
 
 .member-c1 {
@@ -371,6 +374,7 @@ color: #FFFFFF;
     justify-content: space-around;
 
     grid-template-areas:
+        'Titulo'
         'historia-1'
         'historia-2'
         'historia-3';
@@ -381,8 +385,11 @@ color: #FFFFFF;
 
 
 .history-title {
+    grid-area: Titulo;
+    padding: 1em;
     font-size: 66px;
     font-weight: 100;
+    font-family: 'poetsenone-regular';
 }
 
 /* .history div{    
@@ -536,9 +543,19 @@ color: #FFFFFF;
 .misionVision {
     display: grid;
     grid-area: nuestros-misio-vision;
-    /* grid-column: 1 / 4; */
+    /* grid-column: 1/4; */
     background: white;
     justify-content: space-around;
+    background-image: url(../img/nosotros/bg-mision.png);
+    background-repeat: no-repeat;
+    background-size: 63em 46em;
+    padding-bottom: 28em;
+    grid-gap: 2em;
+    /* padding-top: 4em; */
+    position: absolute;
+    height: 740px;
+    justify-items: stretch;
+    width: 100%;
 }
 
 .misionVision-left {
@@ -549,8 +566,12 @@ color: #FFFFFF;
     background: #FCDE93;
     border: 10px solid #C25C01;
     display: grid;
+
 }
 
+/* 
+background-repeat: no-repeat;
+background-size: 100% 100%; */
 .misionVision-title {
     font-size: 46px;
     font-weight: 100;
@@ -559,7 +580,7 @@ color: #FFFFFF;
     position: relative;
     left: 52px;
     padding-top: 1em;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     display: grid;
     justify-items: center;
     justify-content: space-between;
@@ -610,6 +631,18 @@ color: #FFFFFF;
 
 /******************************/
 footer 
-{
-    background-color: #fcfbfb;
+ {/* position: absolute; */
+    z-index: 1;
+    /* background-color: #fcfbfb;
+    top: -215px;
+    position: relative; */
+    top: 15px;
 }   
+.footer-row{
+    position: relative;
+    z-index: 1;
+    top: 650px;
+}
+.footer-top-row{ 
+ 
+}  

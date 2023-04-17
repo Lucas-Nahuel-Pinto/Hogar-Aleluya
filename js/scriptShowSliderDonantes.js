@@ -1,4 +1,4 @@
-let slideIndexTestimonios = 1;
+let slideDonacionesDonantes = 1;
 
 
 showSlides();
@@ -10,16 +10,16 @@ function showSlides() {
   setTimeout(showSlides, 30000); // Change image every 60000--60 seconds 
 }
 
-showSliderDonantes(slideIndexTestimonios);
+showSliderDonantes(slideDonacionesDonantes);
 
 function plusslidesDonantes(n) {
 
-    showSliderDonantes(slideIndexTestimonios += n);
+    showSliderDonantes(slideDonacionesDonantes += n);
 }
 
 // function currentSlideTestimonios(n) {
 
-//     showSliderDonantes(slideIndexTestimonios = n);
+//     showSliderDonantes(slideDonacionesDonantes = n);
 // }
 
 function showSliderDonantes(n) {
@@ -28,10 +28,10 @@ function showSliderDonantes(n) {
     let slidesDonantesArticles = document.getElementsByClassName("slidesDonantes");
     //   let captionText = document.getElementById("caption");
     if (n > slidesDonantesArticles.length) {
-        slideIndexTestimonios = 1
+        slideDonacionesDonantes = 1
     }
     if (n < 1) {
-        slideIndexTestimonios = slidesDonantesArticles.length
+        slideDonacionesDonantes = slidesDonantesArticles.length
     }
 
     for (i = 0; i < slidesDonantesArticles.length; i++) {
@@ -46,58 +46,58 @@ function showSliderDonantes(n) {
     }
 
     if (n > slidesDonantesArticles.length) {
-         slideIndexTestimonios = 1
+         slideDonacionesDonantes = 1
      } else {
          if (n < 1) {
-             slideIndexTestimonios = slidesDonantesArticles.length
+             slideDonacionesDonantes = slidesDonantesArticles.length
       }
      }
 
-    if (slideIndexTestimonios == 1) {
-         slidesDonantesArticles[slideIndexTestimonios - 1].className += " donaciones-donantes-art1";
-         slidesDonantesArticles[slideIndexTestimonios].className += " donaciones-donantes-art2 ";
-         slidesDonantesArticles[slideIndexTestimonios + 1].className += " donaciones-donantes-art3";
+    if (slideDonacionesDonantes == 1) {
+         slidesDonantesArticles[slideDonacionesDonantes - 1].className += " donaciones-donantes-art1";
+         slidesDonantesArticles[slideDonacionesDonantes].className += " donaciones-donantes-art2 ";
+         slidesDonantesArticles[slideDonacionesDonantes + 1].className += " donaciones-donantes-art3";
 
 
-        slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "grid";
-        slidesDonantesArticles[slideIndexTestimonios].style.display = "grid";
-        slidesDonantesArticles[slideIndexTestimonios + 1].style.display = "grid";
+        slidesDonantesArticles[slideDonacionesDonantes - 1].style.display = "grid";
+        slidesDonantesArticles[slideDonacionesDonantes].style.display = "grid";
+        slidesDonantesArticles[slideDonacionesDonantes + 1].style.display = "grid";
     } else {
-        if (slideIndexTestimonios == slidesDonantesArticles.length) {
-            slidesDonantesArticles[slideIndexTestimonios - 1].className += " donaciones-donantes-art1";
+        if (slideDonacionesDonantes == slidesDonantesArticles.length) {
+            slidesDonantesArticles[slideDonacionesDonantes - 1].className += " donaciones-donantes-art1";
             slidesDonantesArticles[0].className += "donaciones-donantes-art2";
             slidesDonantesArticles[1].className += "donaciones-donantes-art3";
    
 
-            slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "grid";
+            slidesDonantesArticles[slideDonacionesDonantes - 1].style.display = "grid";
             slidesDonantesArticles[0].style.display = "grid";
             slidesDonantesArticles[1].style.display = "grid";
 
         }
     }
 
-    if (slideIndexTestimonios == slidesDonantesArticles.length - 1) {
-          slidesDonantesArticles[slideIndexTestimonios - 1].className += " donaciones-donantes-art1";
-          slidesDonantesArticles[slideIndexTestimonios].className += "  donaciones-donantes-art2";
+    if (slideDonacionesDonantes == slidesDonantesArticles.length - 1) {
+          slidesDonantesArticles[slideDonacionesDonantes - 1].className += " donaciones-donantes-art1";
+          slidesDonantesArticles[slideDonacionesDonantes].className += "  donaciones-donantes-art2";
           slidesDonantesArticles[0].className += "  donaciones-donantes-art3";
 
-        slidesDonantesArticles[slideIndexTestimonios - 1].style.display = "grid";
-        slidesDonantesArticles[slideIndexTestimonios].style.display = "grid";
+        slidesDonantesArticles[slideDonacionesDonantes - 1].style.display = "grid";
+        slidesDonantesArticles[slideDonacionesDonantes].style.display = "grid";
         slidesDonantesArticles[0].style.display = "grid";
     }
 
 
-    if (slideIndexTestimonios > 1 && slideIndexTestimonios < slidesDonantesArticles.length - 1) {
-        slidesDonantesArticles[slideIndexTestimonios - 1].className += " donaciones-donantes-art1";
-        slidesDonantesArticles[slideIndexTestimonios].className += " donaciones-donantes-art2";
-        slidesDonantesArticles[slideIndexTestimonios + 1].className += " donaciones-donantes-art3";
-        slidesDonantesArticles[slideIndexTestimonios-1].style.display = "grid";
-        slidesDonantesArticles[slideIndexTestimonios].style.display = "grid";
-        slidesDonantesArticles[slideIndexTestimonios +1].style.display = "grid";
+    if (slideDonacionesDonantes > 1 && slideDonacionesDonantes < slidesDonantesArticles.length - 1) {
+        slidesDonantesArticles[slideDonacionesDonantes - 1].className += " donaciones-donantes-art1";
+        slidesDonantesArticles[slideDonacionesDonantes].className += " donaciones-donantes-art2";
+        slidesDonantesArticles[slideDonacionesDonantes + 1].className += " donaciones-donantes-art3";
+        slidesDonantesArticles[slideDonacionesDonantes-1].style.display = "grid";
+        slidesDonantesArticles[slideDonacionesDonantes].style.display = "grid";
+        slidesDonantesArticles[slideDonacionesDonantes +1].style.display = "grid";
     }
 
 
 
-    //   slides[slideIndexTestimonios-1].style.display = "block";
-    //   captionText.innerHTML = slidesDonantesArticles[slideIndexTestimonios-1].alt;
+    //   slides[slideDonacionesDonantes-1].style.display = "block";
+    //   captionText.innerHTML = slidesDonantesArticles[slideDonacionesDonantes-1].alt;
 }
