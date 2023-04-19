@@ -14,13 +14,12 @@ $asunto = "prueba  de envio de mensaje con php";
 $carte = "De: $nombre $apellido\n";
 $carte .= "Correo: $correo\n";
 $carte .= "Mensaje: $mensaje";
-echo "$asunto $carte $destinatario" ;
+// echo "$asunto $carte $destinatario" ;
 //enviando mensaje
 mail($destinatario,$asunto,$carte);
 // header('Location:../contacto.html');
  echo'<script type="text/javascript"> 
  location.href="../contacto.html";
- alert("Mensaje Enviado Corecctamente:\n Gracias por contactar");
 	</script>';
 }
 php_func_email();

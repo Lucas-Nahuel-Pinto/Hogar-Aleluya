@@ -40,8 +40,16 @@ body
 
     background-color: rgb(255, 255, 255);
 } */
+.p-small{
+    font-family: 'poetsenone-regular';
 
+}
 
+@font-face
+{
+    font-family: 'poetsenone-regular';
+    src: url('./fonts/poetsenone-regular.ttf');
+}
 @font-face {
     font-family: 'FontAwesome';
     src: url('./fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -108,8 +116,6 @@ body
     display: grid;
     border: 0px;
     color: white;
-    justify-content: space-evenly;
-    justify-items: center;
     align-content: space-evenly;
 }
 
@@ -131,7 +137,7 @@ body
   
   /* Agrandar tamaño del icono */
   iconify-icon { 
-    padding-left: 10px;
+    /* padding-left: 10px; */
     width: 2em;
     /* height: 50px; */
     filter: drop-shadow(0px 15px 4px rgba(0, 0, 0, 0.25));
@@ -149,11 +155,11 @@ body
     display: flex;
     /* grid-row: 2; */
     border: 0px;
-    display: block;
+    /* display: block; */
     padding: 20px;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;
 }
 
@@ -162,15 +168,15 @@ body
     color: white;
     position: relative;
     /* margin-block-start: 13em; */
-    margin-left: 3em;
+    margin-left: 1em;
     max-width: 35em;
     /* left: 33px; */
     background: #E0A36C;
     /* background: rgba(40, 40, 40, 0.5); */
     border-radius: 50px 0px 0px 50px;
     background-size: contain;
-    justify-items: end;
-    justify-content: end;
+    /* justify-items: end; */
+    /* justify-content: end;*/
 }
 .contacto-aside-area-titulo-menu{
     display: flex;
@@ -190,11 +196,16 @@ body
 
 .titulo-form{
     grid-area: titulo-form;
-    font-size: 40px;
+    font-size: 45px;
     /* font-weight: 600; */
     color: #303030;
     margin-bottom: 1em;
-    font-family: 'PoetsenOne';
+    font-family: 'poetsenone-regular';
+    font-style: normal;
+    /* font-weight: 400; */
+    /* font-size: 72px; */
+    /* line-height: 86px; */
+    text-transform: uppercase;
 }
 
 .user_info{    
@@ -233,7 +244,7 @@ form.form_contact .user_info .name_nick p{
 .grid-contacto-mapa{
     grid-area: contacto-map;
     width: inherit;
-    height: 275px;
+    height: 28em;
 }
 
 .mapa-body{
@@ -242,6 +253,7 @@ form.form_contact .user_info .name_nick p{
     width: 100%;
     height: auto;
     filter: drop-shadow(0px -15px 10px rgba(0, 0, 0, 0.25));
+    /* -webkit-mask-image: url('.img/bg-footer-estilizado-150px.png'); */
 }
 .mapa-body iframe{
 
@@ -427,6 +439,21 @@ form.form_contact input[type="submit"]:hover {
     font-size: 30px;
   
 }
+.horarios-ong{
+
+}
+
+.horarios-ong {
+
+}
+
+.contenido-aside {
+    display: flex;
+    /* padding-left: 18em; */
+    margin-left: 2em;
+    justify-content: flex-start;
+}
+
 
 /**********funciona con el js*******/
 .show {
@@ -441,7 +468,6 @@ footer{
     /* top: -11em; */
     position: relative;
     z-index: 1;
-
 } 
 .footer-top-row{
 
@@ -450,7 +476,38 @@ footer{
     z-index: 1;
     
     pointer-events: none;
+  
+    /* -webkit-clip-path: url('./img/bg-footer-estilizado-150px.png#shape');
+    clip-path: url('./img/bg-footer-estilizado-150px.png#shape'); */
+} 
+
+
+
+
+.footer-top-row img{
+
+    /* top: -11em; */
+    position: relative;
+    /* z-index: 1; */
+    
+    pointer-events: none;
+  
+    /* -webkit-clip-path: url('./img/bg-footer-estilizado-150px.png');
+    clip-path: url('./img/bg-footer-estilizado-150px.png'); */
 
 } 
+
+
+.mask {
+    position: absolute; /* para que la capa de la máscara sea absoluta y se superponga al mapa */
+    bottom: 0; /* para que la capa de la máscara esté en la parte inferior del footer */
+    left: 0; /* para que la capa de la máscara esté alineada con el borde izquierdo del footer */
+    width: 100%; /* para que la capa de la máscara tenga el mismo ancho que el footer */
+    height: 181px; /* para que la capa de la máscara tenga la altura de la imagen ondulada */
+    z-index: 2; /* para que la capa de la máscara tenga una posición más alta que el contenido del footer */
+    background-image: url('/img/bg-footer-estilizado-150px.png'); /* para establecer la imagen ondulada como fondo de la capa de la máscara */
+    background-size: cover; /* para ajustar la imagen ondulada al tamaño de la capa de la máscara */
+    pointer-events: none; /* para que la capa de la máscara no capture los eventos de puntero y permita la interacción con el mapa */
+  }
 
 

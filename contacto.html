@@ -52,7 +52,7 @@
                             </a>
                         </li>
                         <li class="center-nav">
-                            <a href="#">
+                            <a href="./nosotros.html">
                                 Nosotros
                             </a>
                         </li>
@@ -86,7 +86,7 @@
                 <nav>
                     <ul>
                         <li class="donar-btn">
-                            <a href="#">
+                            <a href="./donaciones.html">
                                 Donar
                             </a>
                         </li>
@@ -103,7 +103,7 @@
         </div>
         <!-- <div class="hero-row"> -->
         <div class="hero-marginBottom-row">
-            <img class="hero-marginBottom-row-img" src="./img/contacto\borde-inf.png">
+            <img class="hero-marginBottom-row-img" src="./img/contacto\Borde-inf.png">
         </div>
 
     </header>
@@ -124,8 +124,7 @@
                     </h3>
                 </div>
 
-                <form action="./php/scriptEnviarAContacto.php" method="post" class="form_contact"
-                 id="Modal"
+                <form action="./php/scriptEnviarAContacto.php" method="post" class="form_contact" id="Modal"
                     onsubmit="return validarFormulario();">
                     <!-- onsubmit="return validarForm();">  -->
                     <h2 class="titulo-form h-medium">FORMULARIO</h2>
@@ -179,25 +178,32 @@
                         <h2> Datos de la Ong</h2>
                     </div>
 
+                    <div class="contenido-aside">
+                        <h4>
+                            <iconify-icon class="iconmap" icon="el:map-marker"></iconify-icon>Manuel Alberti 1197,
+                            Pilar.
+                        </h4>
 
-                    <h3>
-                        <iconify-icon class="iconmap" icon="el:map-marker"></iconify-icon>Manuel Alberti 1197, Pilar.
-                    </h3>
+                        <h4>
+                            <iconify-icon class="iconphone" icon="ci:phone"></iconify-icon>+54 9 11 4868-2689
+                        </h4>
+ 
+                        <h4>
+                            <iconify-icon class="iconmail"
+                                icon="ion:mail-sharp"></iconify-icon>hogar.aleluya.01@gmail.com
+                        </h4>
+                    </div>
 
-                    <h3>
-                        <iconify-icon class="iconphone" icon="ci:phone"></iconify-icon>+54 9 11 4868-2689
-                    </h3>
-
-                    <h3>
-                        <iconify-icon class="iconmail" icon="ion:mail-sharp"></iconify-icon>hogar.aleluya.01@gmail.com
-                    </h3>
                 </div>
 
-                <div>
+                <div class="horarios-ong">
                     <div class="p-small">
                         <h2>Horarios</h2>
                     </div>
-                    <p> Lunes a Viernes: 9:00 hs a 18:00 hs<br> Sabados: 10:00 hs a 12:00 hs</p>
+                    <div class="contenido-aside">
+                        <h4> Lunes a Viernes: 9:00 hs a 18:00 hs <br> Sabados: 10:00 hs a 12:00 hs</h4>
+                    </div>
+
 
                 </div>
 
@@ -215,7 +221,7 @@
             <div class="Contenedor_modal">
                 <h1>"El mensaje ha sido enviado correctamente!"</h1>
                 <h2>"Gracias por contactar!"</h2>
-           
+
             </div>
         </div>
     </div>
@@ -223,9 +229,9 @@
     <!-- # Nuevo Footer.(empieza aca)-->
     <footer class="footer-row">
 
-        <div class="footer-top-row">
+        <div class="footer-top-row mask">
+            <!-- <img src="./img/bg-footerUltraSmall.svg"> -->
             <!-- <img src="./img/bg-footer-estilizado-150px.png"> -->
-            <img src="./img/bg-footerUltraSmall.svg">
         </div>
 
         <div class="footer-center-row">
@@ -252,7 +258,10 @@
                         <div class="footer-tel-text">
                             <p>
                                 02320-403550
-                                </h5>
+                            </p>
+                            <p>
+                                +54 9 11 2597 1197
+                            </p>
                         </div>
                     </div>
                     <div class="footer-email-row">
