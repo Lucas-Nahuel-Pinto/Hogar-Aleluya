@@ -213,42 +213,76 @@ src: url('./fonts/araboto-bold-400.ttf');
 /* NUEVAS CONVECIONES */
 
 .grid-container-eventos{
+    grid-area:'main-row';
     display: grid;
-    background-color: cornsilk;
+    /* background-color: cornsilk; */
     padding-top:  15%;
-    position: relative;
-    grid-template-columns: 0px auto 0px;
+     position: relative; 
 }
 
-.eventos-examples{
-    grid-column: 1 / 4;
-    background:#BC6C24;
+.blurred {
+    background: #FFEA9E;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+  }
+
+
+  .eventos-example{   
+    display: grid;
+    background-image: url(../img/eventos/Bg-Evento.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 80em 85em;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16em 9em 20em 9em;
 }
 
-.eventos-examples-divtitle{
+.eventos-example-divtitle{
     justify-items: center;
 }
 
 .evento-title{
-    font-family:'poetsenone-regular';
-    color:white;
-    font-size:60px;
+    font-family: 'poetsenone-regular';
+    color: white;
+    font-size: 40px;
     font-weight: 100;
+    font-style: normal;
+
+    line-height: 108px;
+    text-align: center;
+    /* padding-bottom: 2em; */
 }
 
 .evento-img{
-
+    width: 100%;
+    height: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
 .evento-text{
-    font-family:'araboto';
-    color:white;
+    font-family: 'araboto';
+    color: white;
     font-size: 28px;
-    font-weight:100;
-    line-height:35px;
+    font-weight: 100;
+    line-height: 35px;
     text-align: left;
-    width:1100px;
-    margin-top:90px;
-    padding-left:50px;
-    padding-bottom:50px;
+    width: auto;
+}
+.ultimo-evento{
+    /* position: absolute;
+    bottom: 0; */
+}
+.footer-superpuesto{
+    position: relative;
+    bottom: 0;
+    /* width: 100%; */
+    /* height: 100px; */
+    /* background-color: #333; */
+    /* color: #fff; */
+    /* text-align: center; */
+    top: -19em;
 }
