@@ -1,42 +1,7 @@
 
-
-.item4{
-    grid-column: 1 / 4;
-    height:700px;
+body{
+    background-color: #fff;
 }
-
-.item5{
-    grid-column: 1 / 4;
-    background:#BC6C24;
-    
-}
-
-.item6{
-    grid-column: 1 / 4;
-    background:#BC6C24;
-    padding-top:100px;
-   
-}
-
-.item7{
-    grid-column: 1 / 4;
-    background:#BC6C24;
-    padding-top:100px;
-}
-
-.item8{
-    grid-column: 1 / 4;
-    background:#BC6C24;
-    padding-top:100px;
-}
-
-.item9{
-    grid-column: 1 / 4;
-    background:#BC6C24;
-    padding-top:100px;
-}
-
-
 
 
 /* Fuentes */
@@ -77,31 +42,6 @@ src: url('./fonts/araboto-bold-400.ttf');
   
 }
 
-.item5 img{
-    height:560px;
-    width:1030px;
-   
-}
-
-.item6 img{
-    height:560px;
-    width:1030px;
-}
-
-.item7 img{
-    height:560px;
-    width:1030px;
-}
-
-.item8 img{
-    height:560px;
-    width:1030px;
-}
-
-.item9 img{
-    height:560px;
-    width:1030px;
-}
 
 /*****************************************************/
 .footer{
@@ -222,10 +162,11 @@ src: url('./fonts/araboto-bold-400.ttf');
 
 .blurred {
     background: #FFEA9E;
-    border-radius: 10px;
-    border: 1px solid transparent;
+    /* border-radius: -56px; */
+    /* border: 1px solid transparent; */
     padding: 20px;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(187px); */
+    box-shadow: inset 5px 10px 5px 10px rgb(255 255 255 / 82%);
   }
 
 
@@ -242,6 +183,17 @@ src: url('./fonts/araboto-bold-400.ttf');
 
 .eventos-example-divtitle{
     justify-items: center;
+}
+
+.eventos-example-divtitle input[type="date"] {
+ 
+    position: relative;
+    top: -5em;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    bottom: 0;
+    /* Si quieres cambiar la apariencia del calendario, aquí puedes agregar estilos */
 }
 
 .evento-title{
@@ -280,9 +232,58 @@ src: url('./fonts/araboto-bold-400.ttf');
     position: relative;
     bottom: 0;
     /* width: 100%; */
-    /* height: 100px; */
+    height: 100pxpx;
     /* background-color: #333; */
     /* color: #fff; */
     /* text-align: center; */
-    top: -19em;
+    top: -18em;
 }
+
+   /* Establecer el fondo del calendario */
+#calendario { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    padding: 2em; 
+    margin: 2em;
+    width: 150px;
+  }
+  
+  .calendario-nota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transform: skew(-10deg);
+    margin-right: 1em;
+  }
+  
+  .calendario-nota-dia {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .calendario-nota-mes {
+    font-size: 1.5em;
+    text-align: center;
+    transform: skew(10deg);
+  }
+  
+  .contenedor {
+    position: relative;
+    display: inline-block;
+  }
+  
+  
+  .calendario {
+    position: absolute;
+    bottom: 3em;
+    right: 2em;
+  }
